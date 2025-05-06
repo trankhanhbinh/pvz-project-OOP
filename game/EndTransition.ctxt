@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=EndTransition
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ EndTransition\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=
+comment1.target=EndTransition()
+comment1.text=\r\n\ Constructor\:\ Initializes\ the\ EndTransition\ actor\ by\ setting\ its\ image\ transparency\ to\ fully\ opaque.\r\n
+comment2.params=
+comment2.target=void\ act()
+comment2.text=\r\n\ Act\ method\:\ Called\ each\ act\ cycle.\r\n\ Reduces\ the\ image\ transparency\ by\ 10\ units\ at\ a\ time.\ When\ fully\ faded\ out,\r\n\ it\ removes\ the\ actor\ from\ the\ world.\r\n
+numComments=3
