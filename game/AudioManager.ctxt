@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=AudioManager
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ AudioPlayer\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=
+comment1.target=AudioManager()
+comment1.text=\r\n\ Default\ constructor\ for\ AudioPlayer.\r\n\ (Not\ used\ if\ you\ only\ call\ the\ static\ methods.)\r\n
+comment2.params=audio
+comment2.target=void\ play(java.lang.String[])
+comment3.params=volume\ audio
+comment3.target=void\ play(int,\ java.lang.String[])
+comment4.params=loop\ audio
+comment4.target=void\ play(boolean,\ java.lang.String[])
+comment5.params=sounds
+comment5.target=void\ stop(greenfoot.GreenfootSound[])
+numComments=6
