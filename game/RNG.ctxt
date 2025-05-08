@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=RNG
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ RNG\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=
+comment1.target=RNG()
+comment2.params=min\ max
+comment2.target=int\ Int(int,\ int)
+comment3.params=min\ max
+comment3.target=double\ Double(int,\ int)
+numComments=4
