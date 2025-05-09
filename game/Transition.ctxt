@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #BlueJ class context
 comment0.target=Transition
 comment0.text=\r\n\ Write\ a\ description\ of\ class\ Transition\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
@@ -14,3 +15,21 @@ comment5.target=void\ changeWorld()
 comment6.params=world
 comment6.target=void\ addedToWorld(greenfoot.World)
 numComments=7
+=======
+#BlueJ class context
+comment0.target=Transition
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ Transition\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=fadeOut\ targetWorld\ fadeSpeed
+comment1.target=Transition(boolean,\ greenfoot.World,\ int)
+comment2.params=fadeOut\ targetWorld\ fadeSpeed\ waitDuration
+comment2.target=Transition(boolean,\ greenfoot.World,\ int,\ int)
+comment3.params=fadeOut\ targetWorld\ imageFile\ fadeSpeed
+comment3.target=Transition(boolean,\ greenfoot.World,\ java.lang.String,\ int)
+comment4.params=
+comment4.target=void\ act()
+comment5.params=
+comment5.target=void\ changeWorld()
+comment6.params=world
+comment6.target=void\ addedToWorld(greenfoot.World)
+numComments=7
+>>>>>>> 7a650aacd5b887c15bce49d930456e90154f74eb
