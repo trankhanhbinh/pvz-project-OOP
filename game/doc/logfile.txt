@@ -20,11 +20,27 @@ D:\project\game\doc
 UTF-8
 -charset
 UTF-8
-D:\project\game\Timer.java
+D:\project\game\Grid.java
 <---- end of javadoc command ---->
-Loading source file D:\project\game\Timer.java...
+Loading source file D:\project\game\Grid.java...
 Constructing Javadoc information...
-D:\project\game\Timer.java:2: error: Timer is already defined in this compilation unit
-import java.util.Timer;
-^
-1 error
+D:\project\game\Grid.java:11: error: cannot find symbol
+    private Plant[][] Grid = new Plant[5][9];
+            ^
+  symbol:   class Plant
+  location: class Grid
+D:\project\game\Grid.java:18: error: cannot find symbol
+    public void placePlant(int x, int y, Plant plant){
+                                         ^
+  symbol:   class Plant
+  location: class Grid
+D:\project\game\Grid.java:27: error: cannot find symbol
+    public Plant getPlant(int x, int y){
+           ^
+  symbol:   class Plant
+  location: class Grid
+warning: unknown enum constant Tag.Any
+  reason: class file for threadchecker.Tag not found
+warning: unknown enum constant Tag.Any
+3 errors
+2 warnings
