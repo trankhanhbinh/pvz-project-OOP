@@ -7,8 +7,8 @@ import greenfoot.Greenfoot;
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class AudioManager {
-    public AudioManager(){
+public class Audio{
+    public Audio(){
     }
 
     public static void play(String... audio){
