@@ -13,7 +13,7 @@ public class Start extends Buttons
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     public boolean clicked = false;
-    GreenfootImage[] start;
+    GreenfootImage[] start
     public int counter = 0;
     public Start() {
         super("start1.png", "start2.png");
