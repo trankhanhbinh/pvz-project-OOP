@@ -8,12 +8,15 @@ public class MyWorld extends World
     public boolean lose = false;
     public boolean loseOnce = false;
     public boolean winOnce = false;
-    public Board board = new Board();
+    public Grid grid = new Grid();
     public GreenfootSound Grasswalk = new GreenfootSound("Grasswalk.mp3");
     public GreenfootSound CYS;
     public Zombie n = null;
     public World restartWorld;
     public FallingObject winPlant;
+    
+    
+
     
     public Zombie[][] level1 = {
                 {null, new BasicZombie(), null, null},
@@ -38,12 +41,17 @@ public class MyWorld extends World
     };
  
     
-    public SeedPacket[] bank = {new SunflowerPacket(), new PeashooterPacket(), new WalnutPacket(), new CactusPacket(), new TwinSunflowerPacket()};
+    public SeedPacket[] bank = {new SunflowerPacket(), new PeashooterPacket(), new WalnutPacket(), new CactusPacket()};
     public SeedBank seedbank = new SeedBank(bank);   
     public Hitbox hitbox = new Hitbox();
     public Shovel shovel = new Shovel();
     
+    
     public WaveManager level = new WaveManager(23500L, level1, 20000L, true, 8, 18);
+    
+    
+    
+    
     
     public void stopped() {
         if (Grasswalk.isPlaying()) {
@@ -68,6 +76,7 @@ public class MyWorld extends World
         Grasswalk.stop();
         Audio.play(70, "winmusic.mp3");
         
+        
     }
 
     public boolean hasLost() {
@@ -91,21 +100,19 @@ public class MyWorld extends World
     public MyWorld(GreenfootSound CYS, WaveManager level,  SeedBank seedbank, World restartWorld, FallingObject winPlant)
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
-        super(733, 430, 1, false); 
+        super(763, 448, 1, false); 
         this.CYS = CYS;
         this.seedbank = seedbank;
         this.restartWorld = restartWorld;
         this.level = level;
         this.winPlant = winPlant;
         Greenfoot.setSpeed(50);
-        setBackground("lawn (1).png");
+        setBackground("lawn2.png");
         addObject(seedbank,0,0);
-        addObject(board,0,0);
+        addObject(grid,0,0);
         addObject(hitbox, 0,0);
         addObject(shovel, 690,420);
-        setPaintOrder(Transition.class,AHugeWave.class, ReadySetPlant.class, SunCounter.class, useShovel.class, Shovel.class, TransparentObject.class, SeedPacket.class, FallingSun.class, Sun.class, Dirt.class, Projectile.class, FallingObject.class, Zombie.class, fallingZombie.class, Explosion.class, Plant.class);
-        
-        
+        setPaintOrder(Transition.class,AHugeWave.class, ReadySetPlant.class, SunCounter.class, clickShovel.class, Shovel.class, TransparentObject.class, SeedPacket.class, FallingSun.class, Sun.class, Dirt.class, Projectile.class, FallingObject.class, Zombie.class, fallingZombie.class, Explosion.class, Plant.class);
     }
     
     public void act() {
@@ -119,14 +126,14 @@ public class MyWorld extends World
         }
         if (!loseOnce && hasLost()) {
             Grasswalk.stop();
-            AudioPlayer.play(80, "losemusic.mp3");
+            Audio.play(80, "losemusic.mp3");
             
             GreenfootSound scream = new GreenfootSound("scream.mp3");
             
             addObject(new DelayAudio(scream, 70, false, 4000L), 0,0);
             loseOnce = true;
             Greenfoot.delay(250);
-            addObject(new Transition(false, new GameOver(restartWorld), "GameOver.png", 5), 365, 215);
+            addObject(new Transition(false, new GameOver(restartWorld), "gameover.png", 5), 365, 215);
         } else if (!winOnce && hasWon()) {
             winOnce = true;
             addObject(winPlant, Random.Int(SeedBank.x1, SeedBank.x2), 215);
@@ -147,14 +154,9 @@ public class MyWorld extends World
                 Grasswalk.stop();
                 Greenfoot.setWorld(new IntroLevel2());
                     
-            } else if (Greenfoot.isKeyDown("4")) {
-                CYS.stop();
-                Grasswalk.stop();
-                Greenfoot.setWorld(new IntroLevel3());
             }
         }
-    }
-    
-}
         
+    }
+}   
     
