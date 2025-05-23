@@ -66,8 +66,7 @@ public class MyWorld extends World
     }
     public void finishLevel() {
         Grasswalk.stop();
-        AudioPlayer.play(70, "winmusic.mp3");
-        
+        Audio.play(70, "winmusic.mp3");
         
     }
 
@@ -104,7 +103,7 @@ public class MyWorld extends World
         addObject(board,0,0);
         addObject(hitbox, 0,0);
         addObject(shovel, 690,420);
-        setPaintOrder(Transition.class,HugeWave.class, ReadySetPlant.class, SunCounter.class, useShovel.class, Shovel.class, TransparentObject.class, SeedPacket.class, FallingSun.class, Sun.class, Dirt.class, Projectile.class, FallingObject.class, Zombie.class, fallingZombie.class, Explosion.class, Plant.class);
+        setPaintOrder(Transition.class,AHugeWave.class, ReadySetPlant.class, SunCounter.class, useShovel.class, Shovel.class, TransparentObject.class, SeedPacket.class, FallingSun.class, Sun.class, Dirt.class, Projectile.class, FallingObject.class, Zombie.class, fallingZombie.class, Explosion.class, Plant.class);
         
         
     }
@@ -148,6 +147,10 @@ public class MyWorld extends World
                 Grasswalk.stop();
                 Greenfoot.setWorld(new IntroLevel2());
                     
+            } else if (Greenfoot.isKeyDown("4")) {
+                CYS.stop();
+                Grasswalk.stop();
+                Greenfoot.setWorld(new IntroLevel3());
             }
         }
     }
