@@ -5,7 +5,9 @@ class.EndTransition.image=transition.png
 class.Explosion.image=spudow1.png
 class.Flag.image=flag.png
 class.GameOver.image=GameOver.png
+class.HugeWave.image=ahugewave.png
 class.Initializer.image=Initializer.png
+<<<<<<< Updated upstream
 class.More.image=more1.png
 class.Pea.image=pea1.png
 class.Projectile.image=null.png
@@ -48,10 +50,48 @@ dependency18.to=FixOrder
 dependency18.type=UsesDependency
 dependency19.from=WaveManager
 dependency19.to=Audio
+=======
+class.MainMenu.image=MainMenu.png
+class.MyWorld.image=lawn\ (1).png
+class.logo.image=logo.png
+dependency1.from=MainMenu
+dependency1.to=Hitbox
+dependency1.type=UsesDependency
+dependency10.from=MyWorld
+dependency10.to=DelayAudio
+dependency10.type=UsesDependency
+dependency11.from=MyWorld
+dependency11.to=Transition
+dependency11.type=UsesDependency
+dependency12.from=MyWorld
+dependency12.to=GameOver
+dependency12.type=UsesDependency
+dependency13.from=MyWorld
+dependency13.to=ReadySetPlant
+dependency13.type=UsesDependency
+dependency14.from=MyWorld
+dependency14.to=SunCounter
+dependency14.type=UsesDependency
+dependency15.from=MyWorld
+dependency15.to=TransparentObject
+dependency15.type=UsesDependency
+dependency16.from=MyWorld
+dependency16.to=SeedPacket
+dependency16.type=UsesDependency
+dependency17.from=MyWorld
+dependency17.to=Dirt
+dependency17.type=UsesDependency
+dependency18.from=MyWorld
+dependency18.to=Explosion
+dependency18.type=UsesDependency
+dependency19.from=GameOver
+dependency19.to=Hitbox
+>>>>>>> Stashed changes
 dependency19.type=UsesDependency
-dependency2.from=logo
-dependency2.to=EndTransition
+dependency2.from=MainMenu
+dependency2.to=Start
 dependency2.type=UsesDependency
+<<<<<<< Updated upstream
 dependency20.from=Shovel
 dependency20.to=useShovel
 dependency20.type=UsesDependency
@@ -147,26 +187,118 @@ dependency48.to=Audio
 dependency48.type=UsesDependency
 dependency5.from=Initializer
 dependency5.to=Transition
+=======
+dependency20.from=GameOver
+dependency20.to=Retry
+dependency20.type=UsesDependency
+dependency21.from=Initializer
+dependency21.to=Transition
+dependency21.type=UsesDependency
+dependency22.from=Initializer
+dependency22.to=logo
+dependency22.type=UsesDependency
+dependency23.from=Initializer
+dependency23.to=EndTransition
+dependency23.type=UsesDependency
+dependency24.from=Grid
+dependency24.to=Audio
+dependency24.type=UsesDependency
+dependency25.from=FixOrder
+dependency25.to=WaveManager
+dependency25.type=UsesDependency
+dependency26.from=ProgressionBar
+dependency26.to=WaveManager
+dependency26.type=UsesDependency
+dependency27.from=SunCounter
+dependency27.to=RNG
+dependency27.type=UsesDependency
+dependency28.from=SunCounter
+dependency28.to=SeedBank
+dependency28.type=UsesDependency
+dependency29.from=finishedSending
+dependency29.to=WaveManager
+dependency29.type=UsesDependency
+dependency3.from=MainMenu
+dependency3.to=More
+dependency3.type=UsesDependency
+dependency30.from=Order
+dependency30.to=WaveManager
+dependency30.type=UsesDependency
+dependency31.from=WaveManager
+dependency31.to=finishedSending
+dependency31.type=UsesDependency
+dependency32.from=useShovel
+dependency32.to=SeedBank
+dependency32.type=UsesDependency
+dependency33.from=Buttons
+dependency33.to=GameOver
+dependency33.type=UsesDependency
+dependency34.from=Start
+dependency34.to=DelayAudio
+dependency34.type=UsesDependency
+dependency35.from=Start
+dependency35.to=Transition
+dependency35.type=UsesDependency
+dependency36.from=Retry
+dependency36.to=Transition
+dependency36.type=UsesDependency
+dependency37.from=Transition
+dependency37.to=EndTransition
+dependency37.type=UsesDependency
+dependency38.from=SeedBank
+dependency38.to=SunCounter
+dependency38.type=UsesDependency
+dependency39.from=SeedBank
+dependency39.to=SeedPacket
+dependency39.type=UsesDependency
+dependency4.from=logo
+dependency4.to=Transition
+dependency4.type=UsesDependency
+dependency40.from=SeedBank
+dependency40.to=TransparentObject
+dependency40.type=UsesDependency
+dependency41.from=SeedBank
+dependency41.to=Audio
+dependency41.type=UsesDependency
+dependency5.from=logo
+dependency5.to=EndTransition
+>>>>>>> Stashed changes
 dependency5.type=UsesDependency
-dependency6.from=Initializer
-dependency6.to=logo
+dependency6.from=MyWorld
+dependency6.to=SeedBank
 dependency6.type=UsesDependency
-dependency7.from=Initializer
-dependency7.to=EndTransition
+dependency7.from=MyWorld
+dependency7.to=Hitbox
 dependency7.type=UsesDependency
+<<<<<<< Updated upstream
 dependency8.from=Grid
 dependency8.to=Plant
 dependency8.type=UsesDependency
 dependency9.from=Grid
 dependency9.to=Audio
+=======
+dependency8.from=MyWorld
+dependency8.to=Shovel
+dependency8.type=UsesDependency
+dependency9.from=MyWorld
+dependency9.to=WaveManager
+>>>>>>> Stashed changes
 dependency9.type=UsesDependency
 editor.fx.0.height=737
 editor.fx.0.width=814
+<<<<<<< Updated upstream
 editor.fx.0.x=360
 editor.fx.0.y=26
 height=830
 package.numDependencies=48
 package.numTargets=39
+=======
+editor.fx.0.x=449
+editor.fx.0.y=107
+height=1048
+package.numDependencies=41
+package.numTargets=36
+>>>>>>> Stashed changes
 project.charset=UTF-8
 publish.hasSource=false
 publish.locked=true
@@ -189,49 +321,77 @@ target1.width=120
 target1.x=0
 target1.y=0
 target10.height=70
+<<<<<<< Updated upstream
 target10.name=Shovel
+=======
+target10.name=SunCounter
+>>>>>>> Stashed changes
 target10.showInterface=false
 target10.type=ClassTarget
 target10.width=120
 target10.x=0
 target10.y=0
 target11.height=70
+<<<<<<< Updated upstream
 target11.name=SunCounter
+=======
+target11.name=finishedSending
+>>>>>>> Stashed changes
 target11.showInterface=false
 target11.type=ClassTarget
 target11.width=120
 target11.x=0
 target11.y=0
 target12.height=70
+<<<<<<< Updated upstream
 target12.name=finishedSending
+=======
+target12.name=logo
+>>>>>>> Stashed changes
 target12.showInterface=false
 target12.type=ClassTarget
 target12.width=120
 target12.x=0
 target12.y=0
 target13.height=70
+<<<<<<< Updated upstream
 target13.name=logo
+=======
+target13.name=useShovel
+>>>>>>> Stashed changes
 target13.showInterface=false
 target13.type=ClassTarget
 target13.width=120
 target13.x=0
 target13.y=0
 target14.height=70
+<<<<<<< Updated upstream
 target14.name=useShovel
+=======
+target14.name=TransparentObject
+>>>>>>> Stashed changes
 target14.showInterface=false
 target14.type=ClassTarget
 target14.width=120
 target14.x=0
 target14.y=0
 target15.height=70
+<<<<<<< Updated upstream
 target15.name=TransparentObject
+=======
+target15.name=MyWorld
+>>>>>>> Stashed changes
 target15.showInterface=false
 target15.type=ClassTarget
 target15.width=120
 target15.x=0
 target15.y=0
 target16.height=70
+<<<<<<< Updated upstream
 target16.name=IdleZombie
+=======
+target16.name=Order
+>>>>>>> Stashed changes
 target16.showInterface=false
 target16.type=ClassTarget
 target16.width=120
@@ -273,23 +433,35 @@ target20.width=120
 target20.x=0
 target20.y=0
 target21.height=70
+<<<<<<< Updated upstream
 target21.name=Zombie
+=======
+target21.name=SmoothMover
+>>>>>>> Stashed changes
 target21.showInterface=false
 target21.type=ClassTarget
 target21.width=120
 target21.x=0
 target21.y=0
 target22.height=70
+<<<<<<< Updated upstream
 target22.name=SmoothMover
+=======
+target22.name=SeedPacket
+>>>>>>> Stashed changes
 target22.showInterface=false
 target22.type=AbstractTarget
 target22.width=120
 target22.x=0
 target22.y=0
 target23.height=70
+<<<<<<< Updated upstream
 target23.name=SeedPacket
+=======
+target23.name=MovingObj
+>>>>>>> Stashed changes
 target23.showInterface=false
-target23.type=ClassTarget
+target23.type=AbstractTarget
 target23.width=120
 target23.x=0
 target23.y=0
@@ -308,28 +480,44 @@ target25.width=120
 target25.x=0
 target25.y=0
 target26.height=70
+<<<<<<< Updated upstream
 target26.name=Pea
+=======
+target26.name=ReadySetPlant
+>>>>>>> Stashed changes
 target26.showInterface=false
 target26.type=ClassTarget
 target26.width=120
 target26.x=0
 target26.y=0
 target27.height=70
+<<<<<<< Updated upstream
 target27.name=ReadySetPlant
+=======
+target27.name=animatedObjects
+>>>>>>> Stashed changes
 target27.showInterface=false
 target27.type=ClassTarget
 target27.width=120
 target27.x=0
 target27.y=0
 target28.height=70
+<<<<<<< Updated upstream
 target28.name=Projectile
+=======
+target28.name=DelayAudio
+>>>>>>> Stashed changes
 target28.showInterface=false
 target28.type=ClassTarget
 target28.width=120
 target28.x=0
 target28.y=0
 target29.height=70
+<<<<<<< Updated upstream
 target29.name=animatedObjects
+=======
+target29.name=Timer
+>>>>>>> Stashed changes
 target29.showInterface=false
 target29.type=ClassTarget
 target29.width=120
@@ -343,54 +531,83 @@ target3.width=120
 target3.x=0
 target3.y=0
 target30.height=70
+<<<<<<< Updated upstream
 target30.name=DelayAudio
+=======
+target30.name=Initializer
+>>>>>>> Stashed changes
 target30.showInterface=false
 target30.type=ClassTarget
 target30.width=120
 target30.x=0
 target30.y=0
 target31.height=70
+<<<<<<< Updated upstream
 target31.name=FallingObject
+=======
+target31.name=EndTransition
+>>>>>>> Stashed changes
 target31.showInterface=false
 target31.type=ClassTarget
 target31.width=120
 target31.x=0
 target31.y=0
 target32.height=70
+<<<<<<< Updated upstream
 target32.name=Initializer
+=======
+target32.name=Transition
+>>>>>>> Stashed changes
 target32.showInterface=false
 target32.type=ClassTarget
 target32.width=120
 target32.x=0
 target32.y=0
 target33.height=70
+<<<<<<< Updated upstream
 target33.name=EndTransition
+=======
+target33.name=Buttons
+>>>>>>> Stashed changes
 target33.showInterface=false
 target33.type=ClassTarget
 target33.width=120
 target33.x=0
 target33.y=0
 target34.height=70
+<<<<<<< Updated upstream
 target34.name=Transition
+=======
+target34.name=Retry
+>>>>>>> Stashed changes
 target34.showInterface=false
 target34.type=ClassTarget
 target34.width=120
 target34.x=0
 target34.y=0
 target35.height=70
+<<<<<<< Updated upstream
 target35.name=Buttons
+=======
+target35.name=Audio
+>>>>>>> Stashed changes
 target35.showInterface=false
 target35.type=ClassTarget
 target35.width=120
 target35.x=0
 target35.y=0
 target36.height=70
+<<<<<<< Updated upstream
 target36.name=Retry
+=======
+target36.name=SeedBank
+>>>>>>> Stashed changes
 target36.showInterface=false
 target36.type=ClassTarget
 target36.width=120
 target36.x=0
 target36.y=0
+<<<<<<< Updated upstream
 target37.height=70
 target37.name=Audio
 target37.showInterface=false
@@ -412,6 +629,8 @@ target39.type=ClassTarget
 target39.width=120
 target39.x=0
 target39.y=0
+=======
+>>>>>>> Stashed changes
 target4.height=70
 target4.name=RNG
 target4.showInterface=false
@@ -434,7 +653,11 @@ target6.width=120
 target6.x=0
 target6.y=0
 target7.height=70
+<<<<<<< Updated upstream
 target7.name=ProgressionBar
+=======
+target7.name=MainMenu
+>>>>>>> Stashed changes
 target7.showInterface=false
 target7.type=ClassTarget
 target7.width=120
@@ -448,14 +671,22 @@ target8.width=120
 target8.x=0
 target8.y=0
 target9.height=70
+<<<<<<< Updated upstream
 target9.name=Plant
+=======
+target9.name=Shovel
+>>>>>>> Stashed changes
 target9.showInterface=false
 target9.type=ClassTarget
 target9.width=120
 target9.x=0
 target9.y=0
 version=3.1.0
+<<<<<<< Updated upstream
 width=1550
+=======
+width=1936
+>>>>>>> Stashed changes
 world.lastInstantiated=Initializer
 xPosition=0
 yPosition=8

@@ -27,8 +27,13 @@ public class HugeWave extends Actor {
             }
 
             if (elapsedTime > 7000) { // 2 seconds after siren, show final wave image
+<<<<<<< Updated upstream
                 setImage("finalwave.png");
                 Audio.play(70, "finalwave.mp3");
+=======
+                setImage("ahugewave.png");
+                AudioPlayer.play(70, "finalwave.mp3");
+>>>>>>> Stashed changes
             }
 
             if (elapsedTime > 10000) { // 3 seconds after final wave message, remove object
