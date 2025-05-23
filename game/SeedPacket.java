@@ -8,21 +8,21 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 
 public class SeedPacket extends Actor {
-    private long deltaTime;
-    private long deltaTime2;
-    private long lastFrame = System.nanoTime();
-    private long lastFrame2 = System.nanoTime();
-    private long rechargeTime;
-    private long currentFrame = System.nanoTime();
-    private int sunCost;
-    private boolean recharged = false;
-    private boolean selected = false;
-    private boolean doneRechargeTime = false;
-    private GreenfootImage recharge;
-    private GreenfootImage image1;
-    private GreenfootImage image2;
-    private String name;
-    private MyWorld myWorld;
+    public long deltaTime;
+    public long deltaTime2;
+    public long lastFrame = System.nanoTime();
+    public long lastFrame2 = System.nanoTime();
+    public long rechargeTime;
+    public long currentFrame = System.nanoTime();
+    public int sunCost;
+    public boolean recharged = false;
+    public boolean selected = false;
+    public boolean doneRechargeTime = false;
+    public GreenfootImage recharge;
+    public GreenfootImage image1;
+    public GreenfootImage image2;
+    public String name;
+    public MyWorld myWorld;
 
     public SeedPacket(long rechargeTime, boolean recharged, int sunCost, String name){
         this.rechargeTime = rechargeTime;
@@ -61,7 +61,7 @@ public class SeedPacket extends Actor {
     }
 
     //animation+timing
-    private void handleRechargeProgress() {
+    public void handleRechargeProgress() {
         if (deltaTime < rechargeTime && !doneRechargeTime) {
             if (!recharged && deltaTime2 > 500L) {
                 setImage(name + "2.png");

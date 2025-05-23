@@ -65,7 +65,7 @@ public class useShovel extends SmoothMover
                         MyWorld.board.removePlant(current.getXPos(), current.getYPos());
                         
                     } else {
-                        AudioPlayer.play(80, "tap.mp3", "tap2.mp3");
+                        Audio.play(80, "tap.mp3", "tap2.mp3");
                         
                     }
                     MyWorld.shovel.setSelected(false);

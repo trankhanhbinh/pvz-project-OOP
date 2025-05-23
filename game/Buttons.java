@@ -14,7 +14,7 @@ public class Buttons extends animatedObjects
      */
     public GreenfootImage idle;
     public GreenfootImage hover;
-    public Button(String idle, String hover) {
+    public Buttons(String idle, String hover) {
         this.idle = new GreenfootImage(idle);
         this.hover = new GreenfootImage(hover);
         setImage(idle);
@@ -31,7 +31,7 @@ public class Buttons extends animatedObjects
                 setImage(idle);
             }
             if (Greenfoot.mouseClicked(this)) {
-                AudioPlayer.play(100, "gravebutton.mp3");
+                Audio.play(100, "gravebutton.mp3");
                 update(); 
             }
         }
