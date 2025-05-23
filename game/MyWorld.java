@@ -15,9 +15,6 @@ public class MyWorld extends World
     public World restartWorld;
     public FallingObject winPlant;
     
-    
-
-    
     public Zombie[][] level1 = {
                 {null, new BasicZombie(), null, null},
                 {n},
@@ -46,12 +43,7 @@ public class MyWorld extends World
     public Hitbox hitbox = new Hitbox();
     public Shovel shovel = new Shovel();
     
-    
     public WaveManager level = new WaveManager(23500L, level1, 20000L, true, 8, 18);
-    
-    
-    
-    
     
     public void stopped() {
         if (Grasswalk.isPlaying()) {
@@ -112,11 +104,7 @@ public class MyWorld extends World
         addObject(board,0,0);
         addObject(hitbox, 0,0);
         addObject(shovel, 690,420);
-        setPaintOrder(Transition.class,AHugeWave.class, ReadySetPlant.class, SunCounter.class, clickShovel.class, Shovel.class, TransparentObject.class, SeedPacket.class, FallingSun.class, Sun.class, Dirt.class, Projectile.class, FallingObject.class, Zombie.class, fallingZombie.class, Explosion.class, Plant.class);
-        
-          
-        
-        
+        setPaintOrder(Transition.class,HugeWave.class, ReadySetPlant.class, SunCounter.class, useShovel.class, Shovel.class, TransparentObject.class, SeedPacket.class, FallingSun.class, Sun.class, Dirt.class, Projectile.class, FallingObject.class, Zombie.class, fallingZombie.class, Explosion.class, Plant.class);
         
         
     }
@@ -139,7 +127,7 @@ public class MyWorld extends World
             addObject(new DelayAudio(scream, 70, false, 4000L), 0,0);
             loseOnce = true;
             Greenfoot.delay(250);
-            addObject(new Transition(false, new GameOver(restartWorld), "gameover.png", 5), 365, 215);
+            addObject(new Transition(false, new GameOver(restartWorld), "GameOver.png", 5), 365, 215);
         } else if (!winOnce && hasWon()) {
             winOnce = true;
             addObject(winPlant, Random.Int(SeedBank.x1, SeedBank.x2), 215);
@@ -162,5 +150,8 @@ public class MyWorld extends World
                     
             }
         }
-        
     }
+    
+}
+        
+    

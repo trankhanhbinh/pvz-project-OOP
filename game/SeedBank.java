@@ -1,12 +1,6 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 import java.util.*;
 
-/**
- * Write a description of class SeedSlot here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
 public class SeedBank extends Actor{
     public MyWorld myWorld;
     public SunCounter sunCounter = new SunCounter();

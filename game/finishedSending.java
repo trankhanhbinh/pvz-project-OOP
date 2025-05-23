@@ -11,7 +11,6 @@ class finishedSending extends Actor
     
     finishedSending(WaveManager level, long delayTime) {
         this.delayTime = delayTime;
-       
         
         this.level = level;
     }
