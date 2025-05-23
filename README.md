@@ -1,13 +1,14 @@
 # pvz-project-OOP
-note:
-(1) plant:
+Note:
+(1) Plants:
   + peashooter
+  + repeater
   + sunflower
   + wallnut
   + potato mine
   + jalapeno (ớt)
 (2) zombie : 
-  - add : zombie leader, baotuoitre .
+  - add : zombie leader, brickhead.
 (3) extension :
   + lawn mower
 (4) fix :
