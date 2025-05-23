@@ -1,17 +1,7 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
-/**
- * Write a description of class Start here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
 public class Start extends Buttons
 {
-    /**
-     * Act - do whatever the Start wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
-     */
     public boolean clicked = false;
     GreenfootImage[] start;
     public int counter = 0;
@@ -41,8 +31,8 @@ public class Start extends Buttons
                 if (Greenfoot.mouseClicked(this)) {
                     clicked = true;
                     world.menutheme.stop();
-                    AudioPlayer.play(100, "gravebutton.mp3");
-                    AudioPlayer.play(70, "losemusic.mp3");
+                    Audio.play(100, "gravebutton.mp3");
+                    Audio.play(70, "losemusic.mp3");
                     getWorld().addObject(new DelayAudio(new GreenfootSound("evillaugh.mp3"), 70, false, 1000L), 0,0);
                     
                 }
@@ -52,6 +42,6 @@ public class Start extends Buttons
       
     }
     public void update() {
-        getWorld().addObject(new Transition(false, new Intro(), 4), 365, 215);
+        getWorld().addObject(new Transition(false, new Intro(), 4), 381, 224);
     }
 }

@@ -8,7 +8,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class GameOver extends World {
     // Private instance variable to track the mouse hitbox.
-    private Hitbox hitbox;
+    public Hitbox hitbox;
     
     /**
      * Constructor for GameOver screen.
@@ -24,7 +24,7 @@ public class GameOver extends World {
     public void act() {
         moveHitbox(); 
     }
-    private void moveHitbox() {
+    public void moveHitbox() {
         MouseInfo mouse = Greenfoot.getMouseInfo();
         if (mouse != null) {
             hitbox.setLocation(mouse.getX(), mouse.getY());

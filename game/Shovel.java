@@ -29,8 +29,8 @@ public class Shovel extends SmoothMover
                     if (!selected) {
                         selected = true;
                         setImage("shovel2.png");
-                        AudioPlayer.play(80, "shovel.mp3");
-                        MyWorld.addObject(new clickShovel(), mouse.getX(), mouse.getY());
+                        Audio.play(80, "shovel.mp3");
+                        MyWorld.addObject(new useShovel(), mouse.getX(), mouse.getY());
                     }
                 }
             }

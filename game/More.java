@@ -1,17 +1,7 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
-/**
- * Write a description of class More here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
 public class More extends Buttons
 {
-    /**
-     * Act - do whatever the More wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
-     */
      public boolean clicked = false;
     GreenfootImage[] start;
     public int counter = 0;
@@ -38,7 +28,6 @@ public class More extends Buttons
                 
             }
         }
-        
         
       
     }

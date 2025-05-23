@@ -1,30 +1,27 @@
-import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+import greenfoot.*;
 
-/**
- * Write a description of class finishedSending here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
-public class finishedSending extends Actor
+class finishedSending extends Actor
 {
-    private long startTime;
-    private long delayTime;
-    private WaveManager level;
-
-    public finishedSending(WaveManager level, long delayTime) {
-        this.level = level;
+    public long deltaTime;
+    public long lastFrame = System.nanoTime();
+    public long currentFrame = System.nanoTime();
+    public long delayTime;
+ 
+    public WaveManager level;
+    
+    finishedSending(WaveManager level, long delayTime) {
         this.delayTime = delayTime;
-        startTime = System.currentTimeMillis(); // Capture the start time
+        
+        this.level = level;
     }
-
     public void act() {
-        long elapsedTime = System.currentTimeMillis() - startTime; // Measure elapsed time
-
-        if (elapsedTime >= delayTime) {
-            level.FinishedSending = true; // Mark completion
-            getWorld().removeObject(this); // Remove itself
-        }
+        currentFrame = System.nanoTime();
+        deltaTime = (currentFrame - lastFrame) / 1000000;
+        if (deltaTime > delayTime) {
+            
+            level.finishedSending = true;
+            getWorld().removeObject(this);
+            return;
+        }   
     }
-
 }

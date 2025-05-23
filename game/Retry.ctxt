@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=Retry
+comment1.params=restart
+comment1.target=Retry(greenfoot.World)
+comment2.params=
+comment2.target=void\ update()
+numComments=3
