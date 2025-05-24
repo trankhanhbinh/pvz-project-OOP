@@ -1,11 +1,5 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
-/**
- * Write a description of class SunCounter here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
 public class SunCounter extends Actor{
     public static final int x = 125;  
     public static final int y = 52; 

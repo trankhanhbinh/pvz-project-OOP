@@ -137,8 +137,8 @@ public class WaveManager extends Actor
         lastFrame = System.nanoTime();
         currentFrame = System.nanoTime();
         
-        ProgressBar ProgressBar = new ProgresBar(this);
-        getWorld().addObject(ProgressBar, 490, 25);
+        ProgressionBar ProgressionBar = new ProgressionBar(this);
+        getWorld().addObject(ProgressionBar, 490, 25);
         
     }
     public boolean hasWon() {

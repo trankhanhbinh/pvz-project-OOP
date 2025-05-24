@@ -137,8 +137,8 @@ public class Zombie extends animatedObjects
         }
     }
     public boolean isEating() {
-        var row = MyWorld.board.Board[getYPos()];
-        for (int i = 0; i < MyWorld.board.Board[0].length; i++) {
+        var row = MyWorld.grid.Grid[getYPos()];
+        for (int i = 0; i < MyWorld.grid.Grid[0].length; i++) {
             if (row[i] != null) {
                 
                 if (Math.abs(row[i].getX() - getX()+5) < 35) {

@@ -1,17 +1,7 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
-/**
- * Write a description of class AHugeWave here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
 public class AHugeWave extends Actor
 {
-    /**
-     * Act - do whatever the AHugeWave wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
-     */
     public int counter = 0;
     public boolean finalWave = false;
     public AHugeWave(boolean finalWave) {
