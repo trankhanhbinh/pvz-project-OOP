@@ -110,7 +110,7 @@ public class IntroLevel3 extends World
             
             
             
-            Greenfoot.setWorld(new MyWorld(CYS,level, seedbank, new IntroLevel3()));
+            Greenfoot.setWorld(new MyWorld(CYS,level, seedbank, new IntroLevel3(), new WinCactus()));
         }
        
     }

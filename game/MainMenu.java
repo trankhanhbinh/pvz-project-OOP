@@ -11,9 +11,6 @@ public class MainMenu extends World
         addObject(hitbox,0,0);
         addObject(new Start(), 412, 132);
         addObject(new More(), 398, 224);
-        addObject(new Bush(), 459, 394);
-        addObject(new Achievements(), 155, 380);
-        addObject(new SaveBlock(), 150, 175);
         this.menutheme = menutheme;
         Greenfoot.setSpeed(50);
     }
