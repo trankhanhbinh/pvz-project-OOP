@@ -1,141 +1,137 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 import java.util.*;
 
-public class SeedBank extends Actor{
-    public MyWorld myWorld;
-    public SunCounter sunCounter = new SunCounter();
+/**
+ * Write a description of class SeedBank here.
+ * 
+ * @author (your name) 
+ * @version (a version number or a date)
+ */
+public class SeedBank extends Actor
+{
+    /**
+     * Act - do whatever the SeedBank wants to do. This method is called whenever
+     * the 'Act' or 'Run' button gets pressed in the environment.
+     */
+   
+    public MyWorld MyWorld;
+    public SunCounter suncounter = new SunCounter();
     public SeedPacket[] bank;
     public SeedPacket selectedPacket = null;
     public TransparentObject image = null;
     public TransparentObject transparent = null;
 
-    public static final int x1 = 189;
-    public static final int x2 = 730;
+    public static final int x1 = 182;
+    public static final int x2 = 702;
     public static final int xSpacing = Grid.xSpacing;
-    
-    public static final int y1 = 65;
-    public static final int y2 = 434;
+    public static final int y1 = 62;
+    public static final int y2 = 417;
     public static final int ySpacing = Grid.ySpacing;
-
-    public SeedBank(SeedPacket[] bank){
+    
+    public SeedBank(SeedPacket[] bank) {
+        
         this.bank = bank;
     }
-
-    //mouse and plant placement.
-    public void act(){
+    public void act() {
         MouseInfo mouse = Greenfoot.getMouseInfo();
-        if (mouse != null){
-            handleMouseMovement(mouse);
-            handleMouseClick(mouse);
-        }
-    }
-
-    //mouse movement and placement preview.
-    public void handleMouseMovement(MouseInfo mouse) {
-        if (image != null){
-            if ((mouse.getX() < x1 || mouse.getX() > x2 || mouse.getY() < y1 || mouse.getY() > y2) 
-                || (myWorld.Grid.Grid[(mouse.getY() - y1) / ySpacing][(mouse.getX() - x1) / xSpacing] != null)) {
-                image.setTransparent(false);
-                image.setLocation(mouse.getX(), mouse.getY());
-            } else {
-                int x = (mouse.getX() - x1) / xSpacing;
-                int y = (mouse.getY() - y1) / ySpacing;
-                image.setTransparent(true);
-                image.setLocation(x * Grid.xSpacing + Grid.xOffset, y * Grid.ySpacing + Grid.yOffset);
-            }
-        }
-    }
-
-    //Handles mouse clicks for plant selection and placement.
-    public void handleMouseClick(MouseInfo mouse) {
-        if (Greenfoot.mouseClicked(null)){
-            myWorld.moveHitbox();
-
+        if (mouse != null) {
             if (image != null) {
-                if (mouse.getX() < x1 || mouse.getX() > x2 || mouse.getY() < y1 || mouse.getY() > y2) {
-                    myWorld.removeObject(image);
-                    image = null;
-                    deselectPacket();
-                }else{
-                    placePlant(mouse);
+                if ((mouse.getX() < x1 || mouse.getX() > x2 || mouse.getY() < y1 || mouse.getY() > y2) 
+                    || (MyWorld.grid.Grid[(int)((mouse.getY()-y1)/ySpacing)][(int)((mouse.getX()-x1)/xSpacing)] != null)) {
+                    image.setTransparent(false);
+                    image.setLocation(mouse.getX(), mouse.getY());
+                } else {
+                    int x = (int)((mouse.getX()-x1)/xSpacing);
+                    int y = (int)((mouse.getY()-y1)/ySpacing);
+                    image.setTransparent(true);
+                    image.setLocation(x*Grid.xSpacing+Grid.xOffset, y*Grid.ySpacing+Grid.yOffset);
                 }
+            } else {
+                
             }
-
-            selectSeedPacket();
-        }
-    }
-
-    //place the plants
-    public void placePlant(MouseInfo mouse) {
-        int x = (mouse.getX() - x1) / xSpacing;
-        int y = (mouse.getY() - y1) / ySpacing;
-
-        if (myWorld.Grid.Grid[y][x] == null){
-            myWorld.Grid.placePlant(x, y, selectedPacket.getPlant());
-            sunCounter.removeSun(selectedPacket.sunCost);
-            getWorld().removeObject(image);
-            image = null;
-            selectedPacket.startRecharge();
-            selectedPacket.setRecharged(false);
-            selectedPacket.setSelected(false);
-            selectedPacket = null;
-        }
-    }
-
-    //Deselect + sound
-    public void deselectPacket(){
-        boolean selected = false;
-        Audio.play(80, "tap.mp3", "tap2.mp3");
-
-        if (myWorld.hitbox.getTouching().contains(selectedPacket)) {
-            selected = true;
-        }
-
-        if (!selected){
-            selectedPacket.setSelected(false);
-            selectedPacket = null;
-        }
-    }
-
-    //determines if it was selected or deselected
-    public void selectSeedPacket(){
-        for (Object i : myWorld.hitbox.getTouching()){
-            if (i instanceof SeedPacket){
-                SeedPacket clicked = (SeedPacket) i;
-
-                if (selectedPacket != clicked) {
-                    if (clicked.recharged) {
-                        if (selectedPacket != null){
+            
+            if (Greenfoot.mouseClicked(null)) {
+                MyWorld.moveHitbox();
+                //Debug: System.out.println(mouse.getX()+" "+ mouse.getY());
+                
+                if (image != null) {
+                    if (mouse.getX() < x1 || mouse.getX() > x2 || mouse.getY() < y1 || mouse.getY() > y2) {
+                        MyWorld.removeObject(image);
+                        image = null;
+                        boolean selected = false;
+                        Audio.play(80,"tap.mp3", "tap2.mp3");
+                        if (MyWorld.hitbox.getTouching().contains(selectedPacket)) {
+                                selected = true;
+                        }
+                        if (!selected) {
                             selectedPacket.setSelected(false);
                             selectedPacket = null;
                         }
-                        selectedPacket = clicked;
-                        clicked.setSelected(true);
-                        Audio.play(80, "seedlift.mp3");
-                        image = clicked.addImage();
+                        
                     } else {
-                        Audio.play(80, "buzzer.mp3");
-                    }
-                } else {
-                    if (clicked.recharged) {
-                        selectedPacket = null;
-                        clicked.setSelected(false);
-                        Audio.play(80, "seedlift.mp3");
+                        int x = (int)((mouse.getX()-x1)/xSpacing);
+                        int y = (int)((mouse.getY()-y1)/ySpacing);
+                        if (MyWorld.grid.Grid[y][x] == null) {
+                            MyWorld.grid.placePlant(x, y, selectedPacket.getPlant());
+                            suncounter.removeSun(selectedPacket.sunCost);
+                            getWorld().removeObject(image);
+                            image = null;
+                            selectedPacket.startRecharge();
+                            selectedPacket.setRecharged(false);
+                            selectedPacket.setSelected(false);
+                            selectedPacket = null;
+                        }
                     }
                 }
+                
+                
+                
+                
+                
+                
+                for (Object i : MyWorld.hitbox.getTouching()) {
+                    if (i instanceof SeedPacket) {
+                        SeedPacket clicked = (SeedPacket)i;
+                        
+                        if (selectedPacket != clicked) {
+                            if (clicked.recharged) {
+                                if (selectedPacket != null) {
+                                    selectedPacket.setSelected(false);
+                                    selectedPacket = null;
+                                }
+                                selectedPacket = clicked;
+                                clicked.setSelected(true);
+                                Audio.play(80, "seedlift.mp3");
+                                image = clicked.addImage();
+                            } else {
+                                Audio.play(80, "buzzer.mp3");
+                            }
+                        } else {
+                            if (clicked.recharged) {
+                                selectedPacket = null;
+                                clicked.setSelected(false);
+                                Audio.play(80, "seedlift.mp3");
+                            }
+                        }
+                
+                    }
+            
+                }
+                
+                
+                
             }
+            
+            
         }
     }
-
     @Override
     public void addedToWorld(World world) {
-        myWorld = (MyWorld) getWorld();
-        myWorld.addObject(sunCounter, 125, 52);
-
+        MyWorld = (MyWorld)getWorld();
+        MyWorld.addObject(suncounter, 120, 50);
         for (int i = 0; i < bank.length; i++) {
-            myWorld.addObject(bank[i], 125, 125+i*52);
+            MyWorld.addObject(bank[i], 120, 120+i*50);
         }
     }
+    
 }
-
-

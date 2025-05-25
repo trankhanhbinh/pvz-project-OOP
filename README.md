@@ -6,7 +6,8 @@ Note:
   + sunflower
   + wallnut
   + potato mine
-  + jalapeno (ớt)
+  + cactus
+
 (2) zombie : 
   - add : zombie leader, brickhead.
 (3) extension :
