@@ -7,7 +7,7 @@ public class WinPotato extends FallingObject
     public boolean addTrans = false;
     
     public WinPotato() {
-        super(-3, 0.15, Random.Double(-100, 100), 0, 750L);
+        super(-3, 0.15, RNG.Double(-100, 100), 0, 750L);
         
     }
     public void update() {
@@ -26,7 +26,7 @@ public class WinPotato extends FallingObject
                 if (!addTrans) {
                     addTrans=true;
                     getWorld().addObject(new Transition(false, new IntroLevel1(), "whitetransition.png", 1), 360, 215);
-                    AudioPlayer.play(70, "lightfill.mp3");
+                    Audio.play(70, "lightfill.mp3");
                 }
             }
         } else {
