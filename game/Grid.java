@@ -6,50 +6,65 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name) 
  * @version (a version number or a date)
  */
-
-public class Grid extends Actor{
-    private Plant[][] Grid = new Plant[5][9];
+public class Grid extends Actor
+{
     
+     // instance variables - replace the example below with your own
+    public Plant[][] Grid = new Plant[5][9]; 
     public static final int xOffset = 221;
     public static final int yOffset = 99;
     public static final int xSpacing = 60;
     public static final int ySpacing = 75;
-
-    public void placePlant(int x, int y, Plant plant){
-        if (Grid[y][x] == null){
-            Grid[y][x] = plant;
-            World myWorld = getWorld();
-            myWorld.addObject(plant, x * xSpacing + xOffset, y * ySpacing + yOffset);
+    
+    
+    
+    /**
+     * Constructor for objects of class Grid
+     */
+    public Grid()
+    {
+        
+    }
+    public void placePlant(int x, int y, Plant plant) {
+        if (Grid[y][x] == null) {
+            Grid[y][x] = plant;    
+            World MyWorld = getWorld();
+            
+            MyWorld.addObject(plant, x*xSpacing+xOffset, y*ySpacing+yOffset);
             Audio.play(80, "plant.mp3", "plant2.mp3");
         }
+        
     }
-
-    public Plant getPlant(int x, int y){
+    public Plant getPlant(int x, int y) {
         return Grid[y][x];
     }
-
-    public void removePlant(int x, int y){
-        if (Grid[y][x] != null){
+    public void removePlant(int x, int y) {
+        if (Grid[y][x] != null) {
             getWorld().removeObject(Grid[y][x]);
-            Grid[y][x] = null;
+            Grid[y][x] = null;    
         }
-        Audio.play(80, "plant2.mp3");
+        Audio.play(80,"plant2.mp3");
     }
-
-    public void updateGrid(){
-        for (int i = 0; i < Grid.length; i++){
-            for (int k = 0; k < Grid[0].length; k++){
+    
+    public void updateGrid() {
+        for (int i = 0; i < Grid.length; i++) {
+            for (int k = 0; k < Grid[0].length; k++) {
                 if (Grid[i][k] != null) {
-                    World myWorld = getWorld();
+                    World MyWorld = getWorld();
                     Plant temp = Grid[i][k];
-                    myWorld.addObject(temp, k * xSpacing + xOffset, i * ySpacing + yOffset);
+                    MyWorld.addObject(temp, k*xSpacing+xOffset, i*ySpacing+yOffset);
                 }
             }
         }
+        
     }
-
-    @Override
-    public void act(){
-
+    
+    /**
+     * Act - do whatever the Grid wants to do. This method is called whenever
+     * the 'Act' or 'Run' button gets pressed in the environment.
+     */
+    public void act()
+    {
+        
     }
 }

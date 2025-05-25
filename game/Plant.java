@@ -30,7 +30,7 @@ public class Plant extends animatedObjects
                 MyWorld = (MyWorld)getWorld();
                 Audio.play(80,"gulp.mp3");
                 
-                MyWorld.Grid.removePlant(getXPos(), getYPos());
+                MyWorld.grid.removePlant(getXPos(), getYPos());
                 MyWorld.removeObject(this);
                 
                 return;
