@@ -16,4 +16,8 @@ public class Cone extends FallingObject
         super(-2, 0.2, 0.9, RNG.Int(1, 5), 620L);
         
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 15c3f042ce709cee1f0c02dfaaf5bba367996d98
