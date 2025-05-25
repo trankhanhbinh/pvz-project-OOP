@@ -7,7 +7,7 @@ public class WinRepeater extends FallingObject
     public boolean addTrans = false;
     
     public WinRepeater() {
-        super(-3, 0.15, Random.Double(-100, 100), 0, 750L);
+        super(-3, 0.15, RNG.Double(-100, 100), 0, 750L);
     }
     public void update() {
         currentFrame = System.nanoTime();
@@ -24,7 +24,7 @@ public class WinRepeater extends FallingObject
                 if (!addTrans) {
                     addTrans=true;
                     getWorld().addObject(new Transition(false, new IntroLevel2(), "whitetransition.png", 1), 360, 215);
-                    AudioPlayer.play(70, "lightfill.mp3");
+                    Audio.play(70, "lightfill.mp3");
                 }
             }
         } else {

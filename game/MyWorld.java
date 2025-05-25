@@ -112,7 +112,7 @@ public class MyWorld extends World
         addObject(grid,0,0);
         addObject(hitbox, 0,0);
         addObject(shovel, 690,420);
-        setPaintOrder(Transition.class,AHugeWave.class, ReadySetPlant.class, SunCounter.class, clickShovel.class, Shovel.class, TransparentObject.class, SeedPacket.class, FallingSun.class, Sun.class, Dirt.class, Projectile.class, FallingObject.class, Zombie.class, fallingZombie.class, Explosion.class, Plant.class);
+        setPaintOrder(Transition.class,AHugeWave.class, ReadySetPlant.class, SunCounter.class, useShovel.class, Shovel.class, TransparentObject.class, SeedPacket.class, FallingSun.class, Sun.class, Dirt.class, Projectile.class, FallingObject.class, Zombie.class, fallingZombie.class, Explosion.class, Plant.class);
     }
     
     public void act() {
