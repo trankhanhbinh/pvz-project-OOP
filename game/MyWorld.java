@@ -136,7 +136,7 @@ public class MyWorld extends World
             addObject(new Transition(false, new GameOver(restartWorld), "gameover.png", 5), 365, 215);
         } else if (!winOnce && hasWon()) {
             winOnce = true;
-            addObject(winPlant, Random.Int(SeedBank.x1, SeedBank.x2), 215);
+            addObject(winPlant, RNG.Int(SeedBank.x1, SeedBank.x2), 215);
         } else {
             if (Greenfoot.isKeyDown("1")) {
                 CYS.stop();
