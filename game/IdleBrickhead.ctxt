@@ -1,7 +1,7 @@
 #BlueJ class context
-comment0.target=ReadySetPlant
+comment0.target=IdleBrickhead
 comment1.params=
-comment1.target=ReadySetPlant()
+comment1.target=IdleBrickhead()
 comment2.params=
 comment2.target=void\ act()
 numComments=3
