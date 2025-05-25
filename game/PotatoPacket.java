@@ -2,10 +2,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 public class PotatoPacket extends SeedPacket
 {
-    /**
-     * Act - do whatever the PotatoPacket wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
-     */
+
     public PotatoPacket() {
         super(40000L, false, 25, "potatopacket");
     }

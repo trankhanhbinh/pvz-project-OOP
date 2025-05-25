@@ -29,7 +29,7 @@ public class useShovel extends SmoothMover
             } else {
                   int x = (int)((mouse.getX()-SeedBank.x1)/SeedBank.xSpacing);
                 int y = (int)((mouse.getY()-SeedBank.y1)/SeedBank.ySpacing);
-                Plant current = MyWorld.board.getPlant(x, y);
+                Plant current = MyWorld.grid.getPlant(x, y);
                 if (current != null) {
 
                     if (lastPlant != null && lastPlant != current) {
@@ -52,7 +52,7 @@ public class useShovel extends SmoothMover
                     
                     if (current != null) {
                         
-                        MyWorld.board.removePlant(current.getXPos(), current.getYPos());
+                        MyWorld.grid.removePlant(current.getXPos(), current.getYPos());
                         
                     } else {
                         Audio.play(80, "tap.mp3", "tap2.mp3");

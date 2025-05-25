@@ -1,11 +1,5 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
-/**
- * Write a description of class PotatoMine here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
 public class PotatoMine extends Plant
 {
     private GreenfootImage[] idle;
@@ -32,7 +26,7 @@ public class PotatoMine extends Plant
             if (!playOnce) {
                 if (!playSFX) {
                     playSFX = true;
-                    AudioPlayer.play(70, "dirt_rise.mp3");
+                    Audio.play(70, "dirt_rise.mp3");
                 }
                 animate(arm, 200, false);
                 if (frame > 2) {
@@ -63,7 +57,7 @@ public class PotatoMine extends Plant
                 if (Math.abs(i.getX() - getX()) < 28) {
                     
                     getWorld().addObject(new Explosion(MyWorld.level.zombieRow.get(getYPos())), getX(), getY()-25);
-                    ((MyWorld)getWorld()).board.removePlant(getXPos(), getYPos());
+                    ((MyWorld)getWorld()).grid.removePlant(getXPos(), getYPos());
                     return;
                 } 
             }

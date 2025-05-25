@@ -1,5 +1,6 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
+<<<<<<< HEAD
 /**
  * Write a description of class Bucket here.
  * 
@@ -15,5 +16,11 @@ public class Bucket extends FallingObject
     public Bucket() {
         super(-2, 0.2, 0.9, RNG.Int(1, 5), 620L);
         
+=======
+public class Bucket extends FallingObject
+{
+    public Bucket() {
+        super(-2, 0.2, 0.9, RNG.Int(1, 5), 620L);
+>>>>>>> origin/main
     }
 }

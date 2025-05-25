@@ -1,16 +1,8 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
-/**
- * Write a description of class Cactus here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
 public class Cactus extends Plant
 {
-    /**
-     * Act - do whatever the Peashooter wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.  */
+
     private GreenfootImage[] idle;
     private GreenfootImage[] shoot;
     private boolean shootOnce = false;
@@ -64,10 +56,9 @@ public class Cactus extends Plant
                 animate(shoot, 150, false);
                 
                 
-            }
-            
-            
+            }             
         }
+        
         if (MyWorld.level.zombieRow.get(getYPos()).size() == 0) {
             shooting = false;
         } else {

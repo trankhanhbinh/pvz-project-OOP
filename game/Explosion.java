@@ -1,12 +1,6 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 import java.util.ArrayList;
 
-/**
- * Write a description of class Explosion here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
 public class Explosion extends animatedObjects
 {
     public GreenfootImage[] explosion;
@@ -40,6 +34,5 @@ public class Explosion extends animatedObjects
             return;
             
         }
-        // Add your action code here.
     }
 }

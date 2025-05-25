@@ -2,10 +2,6 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 public class RepeaterPacket extends SeedPacket
 {
-    /**
-     * Act - do whatever the RepeaterPacket wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
-     */
     public RepeaterPacket() {
         super(11000L, true, 225, "repeaterpacket");
         

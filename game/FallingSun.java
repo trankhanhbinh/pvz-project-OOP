@@ -1,5 +1,6 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
+<<<<<<< HEAD
 /**
  * Write a description of class Sun here.
  * 
@@ -12,6 +13,11 @@ public class FallingSun extends FallingObject
      * Act - do whatever the Sun wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
+=======
+public class FallingSun extends FallingObject
+{
+
+>>>>>>> origin/main
     public MyWorld MyWorld;
     public GreenfootImage[] sun;
     public boolean clicked = false;

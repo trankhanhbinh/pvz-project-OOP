@@ -1,12 +1,6 @@
 import greenfoot.GreenfootSound;
 import greenfoot.Greenfoot;
 
-/**
- * Write a description of class AudioPlayer here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
 public class Audio{
     public Audio(){
     }

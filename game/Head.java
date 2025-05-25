@@ -1,5 +1,6 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
+<<<<<<< HEAD
 /**
  * Write a description of class head here.
  * 
@@ -19,3 +20,12 @@ public class Head extends FallingObject
     
 }
 
+=======
+public class Head extends FallingObject{
+
+    public Head() {
+        super(-3, 0.2, 0.7, RNG.Int(1, 5), 700L);
+    }
+    
+}
+>>>>>>> origin/main

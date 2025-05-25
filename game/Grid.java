@@ -1,15 +1,8 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
-/**
- * Write a description of class Grid here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
-public class Grid extends Actor
-{
+public class Grid extends Actor{
     
-     // instance variables - replace the example below with your own
+    // instance variables - replace the example below with your own
     public Plant[][] Grid = new Plant[5][9]; 
     public static final int xOffset = 221;
     public static final int yOffset = 99;

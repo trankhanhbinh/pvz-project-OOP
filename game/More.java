@@ -24,7 +24,7 @@ public class More extends Buttons
             if (Greenfoot.mouseClicked(this)) {
                 clicked = true;
                 
-                AudioPlayer.play(100, "gravebutton.mp3");
+                Audio.play(100, "gravebutton.mp3");
                 
             }
         }
