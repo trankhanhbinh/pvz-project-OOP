@@ -1,19 +1,18 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
-/**
- * Write a description of class CactusPacket here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
 public class CactusPacket extends SeedPacket
 {
-    /**
-     * Act - do whatever the CactusPacket wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
-     */
-    public void act()
-    {
-        // Add your action code here.
+    public CactusPacket() {
+        super(20000L, false, 125, "cactuspacket");
+        
+    }
+    
+    public TransparentObject addImage() {
+        TransparentObject temp = new TransparentCactus(false);
+        ((MyWorld)getWorld()).addObject(temp, Greenfoot.getMouseInfo().getX(), Greenfoot.getMouseInfo().getY());
+        return temp;
+    }
+    public Plant getPlant() {
+        return new Cactus();
     }
 }

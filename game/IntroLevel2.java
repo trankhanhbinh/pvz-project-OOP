@@ -102,7 +102,7 @@ public class IntroLevel2 extends World
             
             
             
-            Greenfoot.setWorld(new MyWorld(CYS,level, seedbank, new IntroLevel2(), new WinTwinsunflower()));
+            Greenfoot.setWorld(new MyWorld(CYS,level, seedbank, new IntroLevel2(), new WinCactus()));
         }
        
     }

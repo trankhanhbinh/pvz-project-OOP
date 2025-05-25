@@ -1,20 +1,22 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
-public class WinRepeater extends FallingObject
+public class WinCactus extends FallingObject
 {
-    public GreenfootImage[] sprites = importSprites("srepeaterpacket", 2);
+    public GreenfootImage[] sprites = importSprites("cactuspacket", 2);
     public boolean move = false;    
     public boolean addTrans = false;
     
-    public WinRepeater() {
+    public WinCactus() {
         super(-3, 0.15, RNG.Double(-100, 100), 0, 750L);
+        
     }
     public void update() {
+        
+        
         currentFrame = System.nanoTime();
         deltaTime = (currentFrame - lastFrame) / 1000000;
-        
         if (move) {
-            setImage("srepeaterpacket1.png");
+            setImage("scactuspacket1.png");
             
             if (getX() < (getWorld().getWidth()/2-5)) {
                 move(2);
@@ -23,7 +25,7 @@ public class WinRepeater extends FallingObject
             } else {
                 if (!addTrans) {
                     addTrans=true;
-                    getWorld().addObject(new Transition(false, new IntroLevel2(), "whitetransition.png", 1), 360, 215);
+                    getWorld().addObject(new Transition(false, new IntroLevel1(), "whitetransition.png", 1), 360, 215);
                     Audio.play(70, "lightfill.mp3");
                 }
             }

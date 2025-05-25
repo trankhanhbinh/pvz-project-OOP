@@ -9,7 +9,7 @@ public class IntroLevel3 extends World
     public int location = 0;
     public boolean started = false;
     public Zombie n = null;
-    public SeedPacket[] bank = {new SunflowerPacket(), new PeashooterPacket(), new WalnutPacket(), new PotatoPacket(), new RepeaterPacket(), new TwinSunflowerPacket()};
+    public SeedPacket[] bank = {new SunflowerPacket(), new PeashooterPacket(), new WalnutPacket(), new PotatoPacket(), new RepeaterPacket(), new CactusPacket()};
     
     public SeedBank seedbank = new SeedBank(bank); 
     public Zombie[][] level3 = {
@@ -41,8 +41,6 @@ public class IntroLevel3 extends World
                 {new Conehead(),new Conehead(),new Conehead(),new Conehead(),new Conehead(), new Buckethead(),new Buckethead(),new Buckethead(),new Buckethead(),new Buckethead(), new Brickhead(),new Brickhead(),new Brickhead(),new Brickhead(),new Brickhead()},
                 {n},
                 {n,n,new Buckethead(), n,n,n,n,new Buckethead(),n,n,n,n,new Buckethead(),n,n,n,n,new Buckethead(), n,n,n,n,new Buckethead(),n,n,n,n,new Buckethead()}
-                
-                
                 
                 
     };
@@ -112,7 +110,7 @@ public class IntroLevel3 extends World
             
             
             
-            Greenfoot.setWorld(new MyWorld(CYS,level, seedbank, new IntroLevel3(), new WinTwinsunflower()));
+            Greenfoot.setWorld(new MyWorld(CYS,level, seedbank, new IntroLevel3()));
         }
        
     }
