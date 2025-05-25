@@ -1,11 +1,5 @@
 import greenfoot.*;
 
-/**
- * Write a description of class Timer2 here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
 class DelayAudio extends Actor
 {
     public GreenfootSound music;

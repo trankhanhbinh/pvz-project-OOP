@@ -1,6 +1,5 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
-import greenfoot.*;
 
 class FixOrder extends Actor {
     private long startTime;

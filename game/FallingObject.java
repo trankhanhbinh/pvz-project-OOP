@@ -1,18 +1,8 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
-/**
- * Write a description of class fallingObject here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
 public class FallingObject extends animatedObjects
 {
-    /**
-     * Act - do whatever the fallingObject wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
-     */
-    
+
     public double vSpeed = 0;
     public double hSpeed = 0;
     public double acceleration = 1;

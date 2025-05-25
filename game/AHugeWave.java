@@ -1,13 +1,11 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
-public class AHugeWave extends Actor
-{
+public class AHugeWave extends Actor{
     public int counter = 0;
     public boolean finalWave = false;
-    public AHugeWave(boolean finalWave) {
-        this.finalWave = finalWave;
 
-    
+    public AHugeWave(boolean finalWave) {
+        this.finalWave = finalWave;    
     }
     
     public void act()

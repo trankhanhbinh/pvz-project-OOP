@@ -1,7 +1,6 @@
 import greenfoot.*;
 
-class finishedSending extends Actor
-{
+class finishedSending extends Actor{
     public long deltaTime;
     public long lastFrame = System.nanoTime();
     public long currentFrame = System.nanoTime();

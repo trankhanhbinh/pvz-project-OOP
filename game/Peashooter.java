@@ -1,13 +1,6 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
-/**
- * Write a description of class Peashooter here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
-public class Peashooter extends Plant
-{
+public class Peashooter extends Plant{
     private GreenfootImage[] idle;
     private GreenfootImage[] shoot;
     private boolean shootOnce = false;
@@ -54,7 +47,7 @@ public class Peashooter extends Plant
                 }
                 
                 if (frame >= 3) {
-                    AudioPlayer.play(80, "throw.mp3", "throw2.mp3");
+                    Audio.play(80, "throw.mp3", "throw2.mp3");
                     MyWorld.addObject(new Pea(getYPos()), getX()+25,getY()-17);
                     lastFrame2 = currentFrame;
                 }

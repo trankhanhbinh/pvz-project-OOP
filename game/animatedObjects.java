@@ -2,14 +2,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 import java.util.Timer;
 import java.io.*;
 
-/**
- * Write a description of class animatedObjects here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
-public class animatedObjects extends SmoothMover
-{
+public class animatedObjects extends SmoothMover{
     /**
      * Act - do whatever the animatedObjects wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
@@ -139,5 +132,4 @@ public class animatedObjects extends SmoothMover
         timer.schedule(new Timer1(sprite, filename, tempFrame,flashFrame), 500L); 
        
     }
-
 }

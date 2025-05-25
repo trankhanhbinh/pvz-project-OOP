@@ -1,11 +1,7 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
-public class PeashooterPacket extends SeedPacket
-{
-    /**
-     * Act - do whatever the PeashooterPacket wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
-     */
+public class PeashooterPacket extends SeedPacket{
+
     public PeashooterPacket() {
         super(10000L, true, 100, "peashooterpacket");
         
