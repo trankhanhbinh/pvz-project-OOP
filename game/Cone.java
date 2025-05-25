@@ -6,4 +6,3 @@ public class Cone extends FallingObject
         super(-2, 0.2, 0.9, RNG.Int(1, 5), 620L);
         
     }
-}

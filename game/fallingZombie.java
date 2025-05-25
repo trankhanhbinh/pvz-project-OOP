@@ -1,7 +1,7 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
-public class fallingZombie extends animatedObject{
-
+public class fallingZombie extends animatedObjects
+{
     public GreenfootImage[] fall;
     
     
