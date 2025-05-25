@@ -53,7 +53,7 @@ public class SeedPacket extends Actor {
 
         handleRechargeProgress();
 
-        if (myWorld.seedbank.SunCounter.sun >= sunCost){
+        if (myWorld.seedbank.suncounter.sun >= sunCost){
             setRecharged(deltaTime > rechargeTime);
         } else {
             setRecharged(false);
