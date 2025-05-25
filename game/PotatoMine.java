@@ -32,7 +32,7 @@ public class PotatoMine extends Plant
             if (!playOnce) {
                 if (!playSFX) {
                     playSFX = true;
-                    AudioPlayer.play(70, "dirt_rise.mp3");
+                    Audio.play(70, "dirt_rise.mp3");
                 }
                 animate(arm, 200, false);
                 if (frame > 2) {
