@@ -18,7 +18,3 @@ public class Head extends FallingObject
     }
     
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> 15c3f042ce709cee1f0c02dfaaf5bba367996d98
