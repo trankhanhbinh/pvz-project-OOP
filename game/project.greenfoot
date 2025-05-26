@@ -89,16 +89,6 @@ dependency105.type=UsesDependency
 dependency106.from=Intro
 dependency106.to=Zombie
 dependency106.type=UsesDependency
-<<<<<<< HEAD
-dependency107.from=SunCounter
-dependency107.to=MyWorld
-dependency107.type=UsesDependency
-dependency108.from=SunCounter
-dependency108.to=FallingSun
-dependency108.type=UsesDependency
-dependency109.from=SunCounter
-dependency109.to=RNG
-=======
 dependency107.from=Intro
 dependency107.to=SunflowerPacket
 dependency107.type=UsesDependency
@@ -107,42 +97,10 @@ dependency108.to=PeashooterPacket
 dependency108.type=UsesDependency
 dependency109.from=Intro
 dependency109.to=WalnutPacket
->>>>>>> ff232285546c710e944bdaed00fb090edbeddd6b
 dependency109.type=UsesDependency
 dependency11.from=MyWorld
 dependency11.to=Grid
 dependency11.type=UsesDependency
-<<<<<<< HEAD
-dependency110.from=SunCounter
-dependency110.to=SeedBank
-dependency110.type=UsesDependency
-dependency111.from=WaveManager
-dependency111.to=Zombie
-dependency111.type=UsesDependency
-dependency112.from=WaveManager
-dependency112.to=ReadySetPlant
-dependency112.type=UsesDependency
-dependency113.from=WaveManager
-dependency113.to=finishedSending
-dependency113.type=UsesDependency
-dependency114.from=WaveManager
-dependency114.to=AHugeWave
-dependency114.type=UsesDependency
-dependency115.from=WaveManager
-dependency115.to=MyWorld
-dependency115.type=UsesDependency
-dependency116.from=WaveManager
-dependency116.to=ProgressionBar
-dependency116.type=UsesDependency
-dependency117.from=WaveManager
-dependency117.to=FixOrder
-dependency117.type=UsesDependency
-dependency118.from=WaveManager
-dependency118.to=Audio
-dependency118.type=UsesDependency
-dependency119.from=SeedBank
-dependency119.to=MyWorld
-=======
 dependency110.from=Intro
 dependency110.to=SeedBank
 dependency110.type=UsesDependency
@@ -172,41 +130,10 @@ dependency118.to=WinPotato
 dependency118.type=UsesDependency
 dependency119.from=FixOrder
 dependency119.to=WaveManager
->>>>>>> ff232285546c710e944bdaed00fb090edbeddd6b
 dependency119.type=UsesDependency
 dependency12.from=MyWorld
 dependency12.to=Zombie
 dependency12.type=UsesDependency
-<<<<<<< HEAD
-dependency120.from=SeedBank
-dependency120.to=SunCounter
-dependency120.type=UsesDependency
-dependency121.from=SeedBank
-dependency121.to=SeedPacket
-dependency121.type=UsesDependency
-dependency122.from=SeedBank
-dependency122.to=TransparentObject
-dependency122.type=UsesDependency
-dependency123.from=SeedBank
-dependency123.to=Grid
-dependency123.type=UsesDependency
-dependency124.from=SeedBank
-dependency124.to=Audio
-dependency124.type=UsesDependency
-dependency125.from=Grid
-dependency125.to=Plant
-dependency125.type=UsesDependency
-dependency126.from=Grid
-dependency126.to=Audio
-dependency126.type=UsesDependency
-dependency127.from=AHugeWave
-dependency127.to=Audio
-dependency127.type=UsesDependency
-dependency128.from=finishedSending
-dependency128.to=WaveManager
-dependency128.type=UsesDependency
-dependency129.from=Shovel
-=======
 dependency120.from=ProgressionBar
 dependency120.to=WaveManager
 dependency120.type=UsesDependency
@@ -235,43 +162,11 @@ dependency128.from=WaveManager
 dependency128.to=AHugeWave
 dependency128.type=UsesDependency
 dependency129.from=WaveManager
->>>>>>> ff232285546c710e944bdaed00fb090edbeddd6b
 dependency129.to=MyWorld
 dependency129.type=UsesDependency
 dependency13.from=MyWorld
 dependency13.to=FallingObject
 dependency13.type=UsesDependency
-<<<<<<< HEAD
-dependency130.from=Shovel
-dependency130.to=useShovel
-dependency130.type=UsesDependency
-dependency131.from=Shovel
-dependency131.to=Audio
-dependency131.type=UsesDependency
-dependency132.from=useShovel
-dependency132.to=MyWorld
-dependency132.type=UsesDependency
-dependency133.from=useShovel
-dependency133.to=Plant
-dependency133.type=UsesDependency
-dependency134.from=useShovel
-dependency134.to=SeedBank
-dependency134.type=UsesDependency
-dependency135.from=useShovel
-dependency135.to=Audio
-dependency135.type=UsesDependency
-dependency136.from=animatedObjects
-dependency136.to=Timer1
-dependency136.type=UsesDependency
-dependency137.from=Explosion
-dependency137.to=Zombie
-dependency137.type=UsesDependency
-dependency138.from=Explosion
-dependency138.to=Audio
-dependency138.type=UsesDependency
-dependency139.from=Zombie
-dependency139.to=MyWorld
-=======
 dependency130.from=WaveManager
 dependency130.to=ProgressionBar
 dependency130.type=UsesDependency
@@ -301,41 +196,10 @@ dependency138.to=Audio
 dependency138.type=UsesDependency
 dependency139.from=Grid
 dependency139.to=Plant
->>>>>>> ff232285546c710e944bdaed00fb090edbeddd6b
 dependency139.type=UsesDependency
 dependency14.from=MyWorld
 dependency14.to=BasicZombie
 dependency14.type=UsesDependency
-<<<<<<< HEAD
-dependency140.from=Zombie
-dependency140.to=Plant
-dependency140.type=UsesDependency
-dependency141.from=Zombie
-dependency141.to=fallingZombie
-dependency141.type=UsesDependency
-dependency142.from=Zombie
-dependency142.to=Head
-dependency142.type=UsesDependency
-dependency143.from=Zombie
-dependency143.to=PotatoMine
-dependency143.type=UsesDependency
-dependency144.from=Zombie
-dependency144.to=Audio
-dependency144.type=UsesDependency
-dependency145.from=Conehead
-dependency145.to=Cone
-dependency145.type=UsesDependency
-dependency146.from=Conehead
-dependency146.to=Arm
-dependency146.type=UsesDependency
-dependency147.from=Conehead
-dependency147.to=RNG
-dependency147.type=UsesDependency
-dependency148.from=Conehead
-dependency148.to=MyWorld
-dependency148.type=UsesDependency
-dependency149.from=Conehead
-=======
 dependency140.from=Grid
 dependency140.to=Audio
 dependency140.type=UsesDependency
@@ -364,43 +228,11 @@ dependency148.from=useShovel
 dependency148.to=SeedBank
 dependency148.type=UsesDependency
 dependency149.from=useShovel
->>>>>>> ff232285546c710e944bdaed00fb090edbeddd6b
 dependency149.to=Audio
 dependency149.type=UsesDependency
 dependency15.from=MyWorld
 dependency15.to=Conehead
 dependency15.type=UsesDependency
-<<<<<<< HEAD
-dependency150.from=BasicZombie
-dependency150.to=Arm
-dependency150.type=UsesDependency
-dependency151.from=BasicZombie
-dependency151.to=RNG
-dependency151.type=UsesDependency
-dependency152.from=BasicZombie
-dependency152.to=Audio
-dependency152.type=UsesDependency
-dependency153.from=BasicZombie
-dependency153.to=MyWorld
-dependency153.type=UsesDependency
-dependency154.from=Buckethead
-dependency154.to=Bucket
-dependency154.type=UsesDependency
-dependency155.from=Buckethead
-dependency155.to=Arm
-dependency155.type=UsesDependency
-dependency156.from=Buckethead
-dependency156.to=RNG
-dependency156.type=UsesDependency
-dependency157.from=Buckethead
-dependency157.to=MyWorld
-dependency157.type=UsesDependency
-dependency158.from=Buckethead
-dependency158.to=Audio
-dependency158.type=UsesDependency
-dependency159.from=Brickhead
-dependency159.to=Brick
-=======
 dependency150.from=animatedObjects
 dependency150.to=Timer1
 dependency150.type=UsesDependency
@@ -430,42 +262,10 @@ dependency158.to=Audio
 dependency158.type=UsesDependency
 dependency159.from=Conehead
 dependency159.to=Cone
->>>>>>> ff232285546c710e944bdaed00fb090edbeddd6b
 dependency159.type=UsesDependency
 dependency16.from=MyWorld
 dependency16.to=Buckethead
 dependency16.type=UsesDependency
-<<<<<<< HEAD
-dependency160.from=Brickhead
-dependency160.to=Arm
-dependency160.type=UsesDependency
-dependency161.from=Brickhead
-dependency161.to=RNG
-dependency161.type=UsesDependency
-dependency162.from=Brickhead
-dependency162.to=MyWorld
-dependency162.type=UsesDependency
-dependency163.from=Brickhead
-dependency163.to=Audio
-dependency163.type=UsesDependency
-dependency164.from=Plant
-dependency164.to=MyWorld
-dependency164.type=UsesDependency
-dependency165.from=Plant
-dependency165.to=Dirt
-dependency165.type=UsesDependency
-dependency166.from=Plant
-dependency166.to=Audio
-dependency166.type=UsesDependency
-dependency167.from=Plant
-dependency167.to=Grid
-dependency167.type=UsesDependency
-dependency168.from=Cactus
-dependency168.to=MyWorld
-dependency168.type=UsesDependency
-dependency169.from=Cactus
-dependency169.to=Needle
-=======
 dependency160.from=Conehead
 dependency160.to=Arm
 dependency160.type=UsesDependency
@@ -495,42 +295,10 @@ dependency168.to=Bucket
 dependency168.type=UsesDependency
 dependency169.from=Buckethead
 dependency169.to=Arm
->>>>>>> ff232285546c710e944bdaed00fb090edbeddd6b
 dependency169.type=UsesDependency
 dependency17.from=MyWorld
 dependency17.to=SunflowerPacket
 dependency17.type=UsesDependency
-<<<<<<< HEAD
-dependency170.from=Cactus
-dependency170.to=Zombie
-dependency170.type=UsesDependency
-dependency171.from=PotatoMine
-dependency171.to=Zombie
-dependency171.type=UsesDependency
-dependency172.from=PotatoMine
-dependency172.to=Explosion
-dependency172.type=UsesDependency
-dependency173.from=PotatoMine
-dependency173.to=MyWorld
-dependency173.type=UsesDependency
-dependency174.from=PotatoMine
-dependency174.to=Audio
-dependency174.type=UsesDependency
-dependency175.from=Sunflower
-dependency175.to=Sun
-dependency175.type=UsesDependency
-dependency176.from=Sunflower
-dependency176.to=MyWorld
-dependency176.type=UsesDependency
-dependency177.from=Peashooter
-dependency177.to=MyWorld
-dependency177.type=UsesDependency
-dependency178.from=Peashooter
-dependency178.to=Pea
-dependency178.type=UsesDependency
-dependency179.from=Peashooter
-dependency179.to=Zombie
-=======
 dependency170.from=Buckethead
 dependency170.to=RNG
 dependency170.type=UsesDependency
@@ -560,42 +328,10 @@ dependency178.to=MyWorld
 dependency178.type=UsesDependency
 dependency179.from=Plant
 dependency179.to=Dirt
->>>>>>> ff232285546c710e944bdaed00fb090edbeddd6b
 dependency179.type=UsesDependency
 dependency18.from=MyWorld
 dependency18.to=PeashooterPacket
 dependency18.type=UsesDependency
-<<<<<<< HEAD
-dependency180.from=Peashooter
-dependency180.to=Audio
-dependency180.type=UsesDependency
-dependency181.from=Repeater
-dependency181.to=MyWorld
-dependency181.type=UsesDependency
-dependency182.from=Repeater
-dependency182.to=Pea
-dependency182.type=UsesDependency
-dependency183.from=Repeater
-dependency183.to=Zombie
-dependency183.type=UsesDependency
-dependency184.from=Repeater
-dependency184.to=Audio
-dependency184.type=UsesDependency
-dependency185.from=IdleZombie
-dependency185.to=RNG
-dependency185.type=UsesDependency
-dependency186.from=Projectile
-dependency186.to=MyWorld
-dependency186.type=UsesDependency
-dependency187.from=Projectile
-dependency187.to=Zombie
-dependency187.type=UsesDependency
-dependency188.from=Head
-dependency188.to=RNG
-dependency188.type=UsesDependency
-dependency189.from=Sun
-dependency189.to=MyWorld
-=======
 dependency180.from=Plant
 dependency180.to=Audio
 dependency180.type=UsesDependency
@@ -625,41 +361,10 @@ dependency188.to=Audio
 dependency188.type=UsesDependency
 dependency189.from=Sunflower
 dependency189.to=Sun
->>>>>>> ff232285546c710e944bdaed00fb090edbeddd6b
 dependency189.type=UsesDependency
 dependency19.from=MyWorld
 dependency19.to=WalnutPacket
 dependency19.type=UsesDependency
-<<<<<<< HEAD
-dependency190.from=Sun
-dependency190.to=RNG
-dependency190.type=UsesDependency
-dependency191.from=Sun
-dependency191.to=Audio
-dependency191.type=UsesDependency
-dependency192.from=Sun
-dependency192.to=SunCounter
-dependency192.type=UsesDependency
-dependency193.from=Bucket
-dependency193.to=RNG
-dependency193.type=UsesDependency
-dependency194.from=Arm
-dependency194.to=RNG
-dependency194.type=UsesDependency
-dependency195.from=Cone
-dependency195.to=RNG
-dependency195.type=UsesDependency
-dependency196.from=WinPotato
-dependency196.to=Transition
-dependency196.type=UsesDependency
-dependency197.from=WinPotato
-dependency197.to=IntroLevel1
-dependency197.type=UsesDependency
-dependency198.from=WinPotato
-dependency198.to=MyWorld
-dependency198.type=UsesDependency
-dependency199.from=WinPotato
-=======
 dependency190.from=Sunflower
 dependency190.to=MyWorld
 dependency190.type=UsesDependency
@@ -688,7 +393,6 @@ dependency198.from=Repeater
 dependency198.to=Audio
 dependency198.type=UsesDependency
 dependency199.from=IdleZombie
->>>>>>> ff232285546c710e944bdaed00fb090edbeddd6b
 dependency199.to=RNG
 dependency199.type=UsesDependency
 dependency2.from=MainMenu
@@ -697,37 +401,6 @@ dependency2.type=UsesDependency
 dependency20.from=MyWorld
 dependency20.to=CactusPacket
 dependency20.type=UsesDependency
-<<<<<<< HEAD
-dependency200.from=WinPotato
-dependency200.to=Audio
-dependency200.type=UsesDependency
-dependency201.from=FallingSun
-dependency201.to=MyWorld
-dependency201.type=UsesDependency
-dependency202.from=FallingSun
-dependency202.to=RNG
-dependency202.type=UsesDependency
-dependency203.from=FallingSun
-dependency203.to=Audio
-dependency203.type=UsesDependency
-dependency204.from=FallingSun
-dependency204.to=SunCounter
-dependency204.type=UsesDependency
-dependency205.from=WinCactus
-dependency205.to=Transition
-dependency205.type=UsesDependency
-dependency206.from=WinCactus
-dependency206.to=IntroLevel1
-dependency206.type=UsesDependency
-dependency207.from=WinCactus
-dependency207.to=MyWorld
-dependency207.type=UsesDependency
-dependency208.from=WinCactus
-dependency208.to=RNG
-dependency208.type=UsesDependency
-dependency209.from=WinCactus
-dependency209.to=Audio
-=======
 dependency200.from=Projectile
 dependency200.to=MyWorld
 dependency200.type=UsesDependency
@@ -757,42 +430,10 @@ dependency208.to=RNG
 dependency208.type=UsesDependency
 dependency209.from=Cone
 dependency209.to=RNG
->>>>>>> ff232285546c710e944bdaed00fb090edbeddd6b
 dependency209.type=UsesDependency
 dependency21.from=MyWorld
 dependency21.to=SeedBank
 dependency21.type=UsesDependency
-<<<<<<< HEAD
-dependency210.from=WinRepeater
-dependency210.to=Transition
-dependency210.type=UsesDependency
-dependency211.from=WinRepeater
-dependency211.to=IntroLevel2
-dependency211.type=UsesDependency
-dependency212.from=WinRepeater
-dependency212.to=MyWorld
-dependency212.type=UsesDependency
-dependency213.from=WinRepeater
-dependency213.to=RNG
-dependency213.type=UsesDependency
-dependency214.from=WinRepeater
-dependency214.to=Audio
-dependency214.type=UsesDependency
-dependency215.from=Brick
-dependency215.to=RNG
-dependency215.type=UsesDependency
-dependency216.from=Buttons
-dependency216.to=GameOver
-dependency216.type=UsesDependency
-dependency217.from=Buttons
-dependency217.to=Audio
-dependency217.type=UsesDependency
-dependency218.from=Start
-dependency218.to=MainMenu
-dependency218.type=UsesDependency
-dependency219.from=Start
-dependency219.to=DelayAudio
-=======
 dependency210.from=WinPotato
 dependency210.to=Transition
 dependency210.type=UsesDependency
@@ -822,42 +463,10 @@ dependency218.to=SunCounter
 dependency218.type=UsesDependency
 dependency219.from=WinCactus
 dependency219.to=Transition
->>>>>>> ff232285546c710e944bdaed00fb090edbeddd6b
 dependency219.type=UsesDependency
 dependency22.from=MyWorld
 dependency22.to=Hitbox
 dependency22.type=UsesDependency
-<<<<<<< HEAD
-dependency220.from=Start
-dependency220.to=Transition
-dependency220.type=UsesDependency
-dependency221.from=Start
-dependency221.to=Intro
-dependency221.type=UsesDependency
-dependency222.from=Start
-dependency222.to=Audio
-dependency222.type=UsesDependency
-dependency223.from=Retry
-dependency223.to=Transition
-dependency223.type=UsesDependency
-dependency224.from=More
-dependency224.to=MainMenu
-dependency224.type=UsesDependency
-dependency225.from=More
-dependency225.to=Audio
-dependency225.type=UsesDependency
-dependency226.from=SeedPacket
-dependency226.to=MyWorld
-dependency226.type=UsesDependency
-dependency227.from=SeedPacket
-dependency227.to=TransparentObject
-dependency227.type=UsesDependency
-dependency228.from=SeedPacket
-dependency228.to=Plant
-dependency228.type=UsesDependency
-dependency229.from=RepeaterPacket
-dependency229.to=TransparentObject
-=======
 dependency220.from=WinCactus
 dependency220.to=IntroLevel1
 dependency220.type=UsesDependency
@@ -887,42 +496,10 @@ dependency228.to=Audio
 dependency228.type=UsesDependency
 dependency229.from=Brick
 dependency229.to=RNG
->>>>>>> ff232285546c710e944bdaed00fb090edbeddd6b
 dependency229.type=UsesDependency
 dependency23.from=MyWorld
 dependency23.to=Shovel
 dependency23.type=UsesDependency
-<<<<<<< HEAD
-dependency230.from=RepeaterPacket
-dependency230.to=TransparentRepeater
-dependency230.type=UsesDependency
-dependency231.from=RepeaterPacket
-dependency231.to=MyWorld
-dependency231.type=UsesDependency
-dependency232.from=RepeaterPacket
-dependency232.to=Plant
-dependency232.type=UsesDependency
-dependency233.from=RepeaterPacket
-dependency233.to=Repeater
-dependency233.type=UsesDependency
-dependency234.from=CactusPacket
-dependency234.to=TransparentObject
-dependency234.type=UsesDependency
-dependency235.from=CactusPacket
-dependency235.to=TransparentCactus
-dependency235.type=UsesDependency
-dependency236.from=CactusPacket
-dependency236.to=MyWorld
-dependency236.type=UsesDependency
-dependency237.from=CactusPacket
-dependency237.to=Plant
-dependency237.type=UsesDependency
-dependency238.from=CactusPacket
-dependency238.to=Cactus
-dependency238.type=UsesDependency
-dependency239.from=WalnutPacket
-dependency239.to=TransparentObject
-=======
 dependency230.from=Buttons
 dependency230.to=GameOver
 dependency230.type=UsesDependency
@@ -952,42 +529,10 @@ dependency238.to=MainMenu
 dependency238.type=UsesDependency
 dependency239.from=More
 dependency239.to=Audio
->>>>>>> ff232285546c710e944bdaed00fb090edbeddd6b
 dependency239.type=UsesDependency
 dependency24.from=MyWorld
 dependency24.to=WaveManager
 dependency24.type=UsesDependency
-<<<<<<< HEAD
-dependency240.from=WalnutPacket
-dependency240.to=TransparentWalnut
-dependency240.type=UsesDependency
-dependency241.from=WalnutPacket
-dependency241.to=MyWorld
-dependency241.type=UsesDependency
-dependency242.from=WalnutPacket
-dependency242.to=Plant
-dependency242.type=UsesDependency
-dependency243.from=WalnutPacket
-dependency243.to=Walnut
-dependency243.type=UsesDependency
-dependency244.from=PeashooterPacket
-dependency244.to=TransparentObject
-dependency244.type=UsesDependency
-dependency245.from=PeashooterPacket
-dependency245.to=TransparentPeashooter
-dependency245.type=UsesDependency
-dependency246.from=PeashooterPacket
-dependency246.to=MyWorld
-dependency246.type=UsesDependency
-dependency247.from=PeashooterPacket
-dependency247.to=Plant
-dependency247.type=UsesDependency
-dependency248.from=PeashooterPacket
-dependency248.to=Peashooter
-dependency248.type=UsesDependency
-dependency249.from=PotatoPacket
-dependency249.to=TransparentObject
-=======
 dependency240.from=SeedPacket
 dependency240.to=MyWorld
 dependency240.type=UsesDependency
@@ -1017,42 +562,10 @@ dependency248.to=TransparentObject
 dependency248.type=UsesDependency
 dependency249.from=CactusPacket
 dependency249.to=TransparentCactus
->>>>>>> ff232285546c710e944bdaed00fb090edbeddd6b
 dependency249.type=UsesDependency
 dependency25.from=MyWorld
 dependency25.to=DelayAudio
 dependency25.type=UsesDependency
-<<<<<<< HEAD
-dependency250.from=PotatoPacket
-dependency250.to=TransparentPotato
-dependency250.type=UsesDependency
-dependency251.from=PotatoPacket
-dependency251.to=MyWorld
-dependency251.type=UsesDependency
-dependency252.from=PotatoPacket
-dependency252.to=Plant
-dependency252.type=UsesDependency
-dependency253.from=PotatoPacket
-dependency253.to=PotatoMine
-dependency253.type=UsesDependency
-dependency254.from=SunflowerPacket
-dependency254.to=TransparentObject
-dependency254.type=UsesDependency
-dependency255.from=SunflowerPacket
-dependency255.to=TransparentSunflower
-dependency255.type=UsesDependency
-dependency256.from=SunflowerPacket
-dependency256.to=MyWorld
-dependency256.type=UsesDependency
-dependency257.from=SunflowerPacket
-dependency257.to=Plant
-dependency257.type=UsesDependency
-dependency258.from=SunflowerPacket
-dependency258.to=Sunflower
-dependency258.type=UsesDependency
-dependency259.from=LawnMower
-dependency259.to=Zombie
-=======
 dependency250.from=CactusPacket
 dependency250.to=MyWorld
 dependency250.type=UsesDependency
@@ -1082,16 +595,10 @@ dependency258.to=TransparentObject
 dependency258.type=UsesDependency
 dependency259.from=PeashooterPacket
 dependency259.to=TransparentPeashooter
->>>>>>> ff232285546c710e944bdaed00fb090edbeddd6b
 dependency259.type=UsesDependency
 dependency26.from=MyWorld
 dependency26.to=Transition
 dependency26.type=UsesDependency
-<<<<<<< HEAD
-dependency260.from=Transition
-dependency260.to=EndTransition
-dependency260.type=UsesDependency
-=======
 dependency260.from=PeashooterPacket
 dependency260.to=MyWorld
 dependency260.type=UsesDependency
@@ -1122,7 +629,6 @@ dependency268.type=UsesDependency
 dependency269.from=SunflowerPacket
 dependency269.to=TransparentSunflower
 dependency269.type=UsesDependency
->>>>>>> ff232285546c710e944bdaed00fb090edbeddd6b
 dependency27.from=MyWorld
 dependency27.to=GameOver
 dependency27.type=UsesDependency
@@ -1378,23 +884,13 @@ dependency98.type=UsesDependency
 dependency99.from=IntroLevel3
 dependency99.to=IdleBucket
 dependency99.type=UsesDependency
-<<<<<<< HEAD
-editor.fx.0.height=737
-editor.fx.0.width=814
-editor.fx.0.x=360
-editor.fx.0.y=28
+editor.fx.0.height=0
+editor.fx.0.width=0
+editor.fx.0.x=0
+editor.fx.0.y=0
 height=838
-package.numDependencies=260
-package.numTargets=79
-=======
-editor.fx.0.height=1048
-editor.fx.0.width=1936
-editor.fx.0.x=-8
-editor.fx.0.y=-8
-height=1048
 package.numDependencies=274
 package.numTargets=83
->>>>>>> ff232285546c710e944bdaed00fb090edbeddd6b
 project.charset=UTF-8
 publish.hasSource=false
 publish.locked=true
@@ -1466,25 +962,21 @@ target16.width=120
 target16.x=0
 target16.y=0
 target17.height=70
-<<<<<<< HEAD
-target17.name=MyWorld
-=======
 target17.name=IdleBrickhead
->>>>>>> ff232285546c710e944bdaed00fb090edbeddd6b
 target17.showInterface=false
 target17.type=ClassTarget
 target17.width=120
 target17.x=0
 target17.y=0
 target18.height=70
-target18.name=Head
+target18.name=MyWorld
 target18.showInterface=false
 target18.type=ClassTarget
 target18.width=120
 target18.x=0
 target18.y=0
 target19.height=70
-target19.name=Hitbox
+target19.name=Head
 target19.showInterface=false
 target19.type=ClassTarget
 target19.width=120
@@ -1498,94 +990,70 @@ target2.width=120
 target2.x=0
 target2.y=0
 target20.height=70
-target20.name=Explosion
+target20.name=Hitbox
 target20.showInterface=false
 target20.type=ClassTarget
 target20.width=120
 target20.x=0
 target20.y=0
 target21.height=70
-target21.name=WaveManager
+target21.name=Explosion
 target21.showInterface=false
 target21.type=ClassTarget
 target21.width=120
 target21.x=0
 target21.y=0
 target22.height=70
-target22.name=Zombie
+target22.name=WaveManager
 target22.showInterface=false
 target22.type=ClassTarget
 target22.width=120
 target22.x=0
 target22.y=0
 target23.height=70
-target23.name=Flag
+target23.name=Zombie
 target23.showInterface=false
 target23.type=ClassTarget
 target23.width=120
 target23.x=0
 target23.y=0
 target24.height=70
-<<<<<<< HEAD
-target24.name=PotatoMine
-=======
 target24.name=IdleCone
->>>>>>> ff232285546c710e944bdaed00fb090edbeddd6b
 target24.showInterface=false
 target24.type=ClassTarget
 target24.width=120
 target24.x=0
 target24.y=0
 target25.height=70
-<<<<<<< HEAD
-target25.name=Sun
-=======
 target25.name=Flag
->>>>>>> ff232285546c710e944bdaed00fb090edbeddd6b
 target25.showInterface=false
 target25.type=ClassTarget
 target25.width=120
 target25.x=0
 target25.y=0
 target26.height=70
-<<<<<<< HEAD
-target26.name=DelayAudio
-=======
 target26.name=PotatoMine
->>>>>>> ff232285546c710e944bdaed00fb090edbeddd6b
 target26.showInterface=false
 target26.type=ClassTarget
 target26.width=120
 target26.x=0
 target26.y=0
 target27.height=70
-<<<<<<< HEAD
-target27.name=Bucket
-=======
 target27.name=Sun
->>>>>>> ff232285546c710e944bdaed00fb090edbeddd6b
 target27.showInterface=false
 target27.type=ClassTarget
 target27.width=120
 target27.x=0
 target27.y=0
 target28.height=70
-<<<<<<< HEAD
-target28.name=Initializer
-=======
 target28.name=DelayAudio
->>>>>>> ff232285546c710e944bdaed00fb090edbeddd6b
 target28.showInterface=false
 target28.type=ClassTarget
 target28.width=120
 target28.x=0
 target28.y=0
 target29.height=70
-<<<<<<< HEAD
-target29.name=TransparentRepeater
-=======
 target29.name=Bucket
->>>>>>> ff232285546c710e944bdaed00fb090edbeddd6b
 target29.showInterface=false
 target29.type=ClassTarget
 target29.width=130
@@ -1599,110 +1067,70 @@ target3.width=120
 target3.x=0
 target3.y=0
 target30.height=70
-<<<<<<< HEAD
-target30.name=RepeaterPacket
-=======
 target30.name=Initializer
->>>>>>> ff232285546c710e944bdaed00fb090edbeddd6b
 target30.showInterface=false
 target30.type=ClassTarget
 target30.width=120
 target30.x=0
 target30.y=0
 target31.height=70
-<<<<<<< HEAD
-target31.name=Retry
-=======
 target31.name=TransparentRepeater
->>>>>>> ff232285546c710e944bdaed00fb090edbeddd6b
 target31.showInterface=false
 target31.type=ClassTarget
 target31.width=130
 target31.x=0
 target31.y=0
 target32.height=70
-<<<<<<< HEAD
-target32.name=SeedBank
-=======
 target32.name=RepeaterPacket
->>>>>>> ff232285546c710e944bdaed00fb090edbeddd6b
 target32.showInterface=false
 target32.type=ClassTarget
 target32.width=120
 target32.x=0
 target32.y=0
 target33.height=70
-<<<<<<< HEAD
-target33.name=Sunflower
-=======
 target33.name=Retry
->>>>>>> ff232285546c710e944bdaed00fb090edbeddd6b
 target33.showInterface=false
 target33.type=ClassTarget
 target33.width=120
 target33.x=0
 target33.y=0
 target34.height=70
-<<<<<<< HEAD
-target34.name=Arm
-=======
 target34.name=SeedBank
->>>>>>> ff232285546c710e944bdaed00fb090edbeddd6b
 target34.showInterface=false
 target34.type=ClassTarget
 target34.width=120
 target34.x=0
 target34.y=0
 target35.height=70
-<<<<<<< HEAD
-target35.name=IntroLevel1
-=======
 target35.name=Sunflower
->>>>>>> ff232285546c710e944bdaed00fb090edbeddd6b
 target35.showInterface=false
 target35.type=ClassTarget
 target35.width=120
 target35.x=0
 target35.y=0
 target36.height=70
-<<<<<<< HEAD
-target36.name=IntroLevel2
-=======
 target36.name=Arm
->>>>>>> ff232285546c710e944bdaed00fb090edbeddd6b
 target36.showInterface=false
 target36.type=ClassTarget
 target36.width=120
 target36.x=0
 target36.y=0
 target37.height=70
-<<<<<<< HEAD
-target37.name=IntroLevel3
-=======
 target37.name=IdleBucket
->>>>>>> ff232285546c710e944bdaed00fb090edbeddd6b
 target37.showInterface=false
 target37.type=ClassTarget
 target37.width=120
 target37.x=0
 target37.y=0
 target38.height=70
-<<<<<<< HEAD
-target38.name=Grid
-=======
 target38.name=Basic
->>>>>>> ff232285546c710e944bdaed00fb090edbeddd6b
 target38.showInterface=false
 target38.type=ClassTarget
 target38.width=120
 target38.x=0
 target38.y=0
 target39.height=70
-<<<<<<< HEAD
-target39.name=AHugeWave
-=======
 target39.name=IntroLevel1
->>>>>>> ff232285546c710e944bdaed00fb090edbeddd6b
 target39.showInterface=false
 target39.type=ClassTarget
 target39.width=120
@@ -1716,110 +1144,70 @@ target4.width=120
 target4.x=0
 target4.y=0
 target40.height=70
-<<<<<<< HEAD
-target40.name=More
-=======
 target40.name=IntroLevel2
->>>>>>> ff232285546c710e944bdaed00fb090edbeddd6b
 target40.showInterface=false
 target40.type=ClassTarget
 target40.width=120
 target40.x=0
 target40.y=0
 target41.height=70
-<<<<<<< HEAD
-target41.name=Plant
-=======
 target41.name=IntroLevel3
->>>>>>> ff232285546c710e944bdaed00fb090edbeddd6b
 target41.showInterface=false
 target41.type=ClassTarget
 target41.width=120
 target41.x=0
 target41.y=0
 target42.height=70
-<<<<<<< HEAD
-target42.name=Shovel
-=======
 target42.name=Grid
->>>>>>> ff232285546c710e944bdaed00fb090edbeddd6b
 target42.showInterface=false
 target42.type=ClassTarget
 target42.width=120
 target42.x=0
 target42.y=0
 target43.height=70
-<<<<<<< HEAD
-target43.name=finishedSending
-=======
 target43.name=AHugeWave
->>>>>>> ff232285546c710e944bdaed00fb090edbeddd6b
 target43.showInterface=false
 target43.type=ClassTarget
 target43.width=120
 target43.x=0
 target43.y=0
 target44.height=70
-<<<<<<< HEAD
-target44.name=useShovel
-=======
 target44.name=More
->>>>>>> ff232285546c710e944bdaed00fb090edbeddd6b
 target44.showInterface=false
 target44.type=ClassTarget
 target44.width=120
 target44.x=0
 target44.y=0
 target45.height=70
-<<<<<<< HEAD
-target45.name=Peashooter
-=======
 target45.name=Plant
->>>>>>> ff232285546c710e944bdaed00fb090edbeddd6b
 target45.showInterface=false
 target45.type=ClassTarget
 target45.width=120
 target45.x=0
 target45.y=0
 target46.height=70
-<<<<<<< HEAD
-target46.name=CactusPacket
-=======
 target46.name=Shovel
->>>>>>> ff232285546c710e944bdaed00fb090edbeddd6b
 target46.showInterface=false
 target46.type=ClassTarget
 target46.width=120
 target46.x=0
 target46.y=0
 target47.height=70
-<<<<<<< HEAD
-target47.name=Brickhead
-=======
 target47.name=finishedSending
->>>>>>> ff232285546c710e944bdaed00fb090edbeddd6b
 target47.showInterface=false
 target47.type=ClassTarget
 target47.width=120
 target47.x=0
 target47.y=0
 target48.height=70
-<<<<<<< HEAD
-target48.name=WalnutPacket
-=======
 target48.name=useShovel
->>>>>>> ff232285546c710e944bdaed00fb090edbeddd6b
 target48.showInterface=false
 target48.type=ClassTarget
 target48.width=120
 target48.x=0
 target48.y=0
 target49.height=70
-<<<<<<< HEAD
-target49.name=fallingZombie
-=======
 target49.name=Peashooter
->>>>>>> ff232285546c710e944bdaed00fb090edbeddd6b
 target49.showInterface=false
 target49.type=ClassTarget
 target49.width=120
@@ -1833,110 +1221,70 @@ target5.width=120
 target5.x=0
 target5.y=0
 target50.height=70
-<<<<<<< HEAD
-target50.name=IdleZombie
-=======
 target50.name=CactusPacket
->>>>>>> ff232285546c710e944bdaed00fb090edbeddd6b
 target50.showInterface=false
 target50.type=ClassTarget
 target50.width=120
 target50.x=0
 target50.y=0
 target51.height=70
-<<<<<<< HEAD
-target51.name=Cone
-=======
 target51.name=Brickhead
->>>>>>> ff232285546c710e944bdaed00fb090edbeddd6b
 target51.showInterface=false
 target51.type=ClassTarget
 target51.width=120
 target51.x=0
 target51.y=0
 target52.height=70
-<<<<<<< HEAD
-target52.name=GameOver
-=======
 target52.name=WalnutPacket
->>>>>>> ff232285546c710e944bdaed00fb090edbeddd6b
 target52.showInterface=false
 target52.type=ClassTarget
 target52.width=120
 target52.x=0
 target52.y=0
 target53.height=70
-<<<<<<< HEAD
-target53.name=WinPotato
-=======
 target53.name=fallingZombie
->>>>>>> ff232285546c710e944bdaed00fb090edbeddd6b
 target53.showInterface=false
 target53.type=ClassTarget
 target53.width=120
 target53.x=0
 target53.y=0
 target54.height=70
-<<<<<<< HEAD
-target54.name=SmoothMover
-=======
 target54.name=IdleZombie
->>>>>>> ff232285546c710e944bdaed00fb090edbeddd6b
 target54.showInterface=false
-target54.type=AbstractTarget
+target54.type=ClassTarget
 target54.width=120
 target54.x=0
 target54.y=0
 target55.height=70
-<<<<<<< HEAD
-target55.name=SeedPacket
-=======
 target55.name=Cone
->>>>>>> ff232285546c710e944bdaed00fb090edbeddd6b
 target55.showInterface=false
 target55.type=ClassTarget
 target55.width=120
 target55.x=0
 target55.y=0
 target56.height=70
-<<<<<<< HEAD
-target56.name=FallingSun
-=======
 target56.name=GameOver
->>>>>>> ff232285546c710e944bdaed00fb090edbeddd6b
 target56.showInterface=false
 target56.type=ClassTarget
 target56.width=120
 target56.x=0
 target56.y=0
 target57.height=70
-<<<<<<< HEAD
-target57.name=PeashooterPacket
-=======
 target57.name=WinPotato
->>>>>>> ff232285546c710e944bdaed00fb090edbeddd6b
 target57.showInterface=false
 target57.type=ClassTarget
 target57.width=120
 target57.x=0
 target57.y=0
 target58.height=70
-<<<<<<< HEAD
-target58.name=PotatoPacket
-=======
 target58.name=SmoothMover
->>>>>>> ff232285546c710e944bdaed00fb090edbeddd6b
 target58.showInterface=false
 target58.type=AbstractTarget
 target58.width=120
 target58.x=0
 target58.y=0
 target59.height=70
-<<<<<<< HEAD
-target59.name=Pea
-=======
 target59.name=SeedPacket
->>>>>>> ff232285546c710e944bdaed00fb090edbeddd6b
 target59.showInterface=false
 target59.type=ClassTarget
 target59.width=120
@@ -1950,110 +1298,70 @@ target6.width=120
 target6.x=0
 target6.y=0
 target60.height=70
-<<<<<<< HEAD
-target60.name=ReadySetPlant
-=======
 target60.name=FallingSun
->>>>>>> ff232285546c710e944bdaed00fb090edbeddd6b
 target60.showInterface=false
 target60.type=ClassTarget
 target60.width=120
 target60.x=0
 target60.y=0
 target61.height=70
-<<<<<<< HEAD
-target61.name=WinCactus
-=======
 target61.name=PeashooterPacket
->>>>>>> ff232285546c710e944bdaed00fb090edbeddd6b
 target61.showInterface=false
 target61.type=ClassTarget
 target61.width=120
 target61.x=0
 target61.y=0
 target62.height=70
-<<<<<<< HEAD
-target62.name=Projectile
-=======
 target62.name=PotatoPacket
->>>>>>> ff232285546c710e944bdaed00fb090edbeddd6b
 target62.showInterface=false
 target62.type=ClassTarget
 target62.width=120
 target62.x=0
 target62.y=0
 target63.height=70
-<<<<<<< HEAD
-target63.name=animatedObjects
-=======
 target63.name=Pea
->>>>>>> ff232285546c710e944bdaed00fb090edbeddd6b
 target63.showInterface=false
 target63.type=ClassTarget
 target63.width=120
 target63.x=0
 target63.y=0
 target64.height=70
-<<<<<<< HEAD
-target64.name=SunflowerPacket
-=======
 target64.name=ReadySetPlant
->>>>>>> ff232285546c710e944bdaed00fb090edbeddd6b
 target64.showInterface=false
 target64.type=ClassTarget
 target64.width=120
 target64.x=0
 target64.y=0
 target65.height=70
-<<<<<<< HEAD
-target65.name=FallingObject
-=======
 target65.name=WinCactus
->>>>>>> ff232285546c710e944bdaed00fb090edbeddd6b
 target65.showInterface=false
 target65.type=ClassTarget
 target65.width=120
 target65.x=0
 target65.y=0
 target66.height=70
-<<<<<<< HEAD
-target66.name=Intro
-=======
 target66.name=Projectile
->>>>>>> ff232285546c710e944bdaed00fb090edbeddd6b
 target66.showInterface=false
 target66.type=ClassTarget
 target66.width=120
 target66.x=0
 target66.y=0
 target67.height=70
-<<<<<<< HEAD
-target67.name=Walnut
-=======
 target67.name=animatedObjects
->>>>>>> ff232285546c710e944bdaed00fb090edbeddd6b
 target67.showInterface=false
 target67.type=ClassTarget
 target67.width=120
 target67.x=0
 target67.y=0
 target68.height=70
-<<<<<<< HEAD
-target68.name=WinRepeater
-=======
 target68.name=SunflowerPacket
->>>>>>> ff232285546c710e944bdaed00fb090edbeddd6b
 target68.showInterface=false
 target68.type=ClassTarget
 target68.width=120
 target68.x=0
 target68.y=0
 target69.height=70
-<<<<<<< HEAD
-target69.name=Brick
-=======
 target69.name=FallingObject
->>>>>>> ff232285546c710e944bdaed00fb090edbeddd6b
 target69.showInterface=false
 target69.type=ClassTarget
 target69.width=120
@@ -2067,110 +1375,70 @@ target7.width=120
 target7.x=0
 target7.y=0
 target70.height=70
-<<<<<<< HEAD
-target70.name=Needle
-=======
 target70.name=Intro
->>>>>>> ff232285546c710e944bdaed00fb090edbeddd6b
 target70.showInterface=false
 target70.type=ClassTarget
 target70.width=120
 target70.x=0
 target70.y=0
 target71.height=70
-<<<<<<< HEAD
-target71.name=EndTransition
-=======
 target71.name=Walnut
->>>>>>> ff232285546c710e944bdaed00fb090edbeddd6b
 target71.showInterface=false
 target71.type=ClassTarget
 target71.width=120
 target71.x=0
 target71.y=0
 target72.height=70
-<<<<<<< HEAD
-target72.name=LawnMower
-=======
 target72.name=WinRepeater
->>>>>>> ff232285546c710e944bdaed00fb090edbeddd6b
 target72.showInterface=false
 target72.type=ClassTarget
 target72.width=120
 target72.x=0
 target72.y=0
 target73.height=70
-<<<<<<< HEAD
-target73.name=Transition
-=======
 target73.name=Brick
->>>>>>> ff232285546c710e944bdaed00fb090edbeddd6b
 target73.showInterface=false
 target73.type=ClassTarget
 target73.width=120
 target73.x=0
 target73.y=0
 target74.height=70
-<<<<<<< HEAD
-target74.name=Repeater
-=======
 target74.name=Needle
->>>>>>> ff232285546c710e944bdaed00fb090edbeddd6b
 target74.showInterface=false
 target74.type=ClassTarget
 target74.width=120
 target74.x=0
 target74.y=0
 target75.height=70
-<<<<<<< HEAD
-target75.name=Buttons
-=======
 target75.name=EndTransition
->>>>>>> ff232285546c710e944bdaed00fb090edbeddd6b
 target75.showInterface=false
 target75.type=ClassTarget
 target75.width=120
 target75.x=0
 target75.y=0
 target76.height=70
-<<<<<<< HEAD
-target76.name=TransparentPeashooter
-=======
 target76.name=LawnMower
->>>>>>> ff232285546c710e944bdaed00fb090edbeddd6b
 target76.showInterface=false
 target76.type=ClassTarget
 target76.width=150
 target76.x=0
 target76.y=0
 target77.height=70
-<<<<<<< HEAD
-target77.name=Audio
-=======
 target77.name=Transition
->>>>>>> ff232285546c710e944bdaed00fb090edbeddd6b
 target77.showInterface=false
 target77.type=ClassTarget
 target77.width=120
 target77.x=0
 target77.y=0
 target78.height=70
-<<<<<<< HEAD
-target78.name=Timer1
-=======
 target78.name=Repeater
->>>>>>> ff232285546c710e944bdaed00fb090edbeddd6b
 target78.showInterface=false
 target78.type=ClassTarget
 target78.width=120
 target78.x=0
 target78.y=0
 target79.height=70
-<<<<<<< HEAD
-target79.name=TransparentCactus
-=======
 target79.name=Buttons
->>>>>>> ff232285546c710e944bdaed00fb090edbeddd6b
 target79.showInterface=false
 target79.type=ClassTarget
 target79.width=120
@@ -2183,8 +1451,6 @@ target8.type=ClassTarget
 target8.width=120
 target8.x=0
 target8.y=0
-<<<<<<< HEAD
-=======
 target80.height=70
 target80.name=TransparentPeashooter
 target80.showInterface=false
@@ -2213,7 +1479,6 @@ target83.type=ClassTarget
 target83.width=120
 target83.x=0
 target83.y=0
->>>>>>> ff232285546c710e944bdaed00fb090edbeddd6b
 target9.height=70
 target9.name=TransparentSunflower
 target9.showInterface=false
@@ -2222,7 +1487,7 @@ target9.width=140
 target9.x=0
 target9.y=0
 version=3.1.0
-width=1936
+width=1550
 world.lastInstantiated=Initializer
 xPosition=0
 yPosition=0
