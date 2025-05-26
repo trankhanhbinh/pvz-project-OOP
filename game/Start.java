@@ -42,6 +42,6 @@ public class Start extends Buttons
       
     }
     public void update() {
-        getWorld().addObject(new Transition(false, new Intro(), 4), 381, 224);
+        getWorld().addObject(new Transition(false, new Level0(), 4), 381, 224);
     }
 }

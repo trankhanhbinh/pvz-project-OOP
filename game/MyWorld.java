@@ -114,11 +114,11 @@ public class MyWorld extends World
         addObject(hitbox, 0,0);
         addObject(shovel, 690,420);
         addObject(new ProgressionBar(level), 490, 25);
-        addObject (lawnmower1, 132, 390);
-        addObject (lawnmower2, 136, 315);
-        addObject (lawnmower3, 140, 240);
-        addObject (lawnmower4, 144, 165);
-        addObject (lawnmower5, 148, 90);
+        addObject (lawnmower1, 132, 357);
+        addObject (lawnmower2, 132, 284);
+        addObject (lawnmower3, 132, 211);
+        addObject (lawnmower4, 132, 138);
+        addObject (lawnmower5, 132, 65);
         
         setPaintOrder(ProgressionBar.class, Transition.class,AHugeWave.class, ReadySetPlant.class, SunCounter.class, useShovel.class, Shovel.class, TransparentObject.class, SeedPacket.class, FallingSun.class, Sun.class, Dirt.class, Projectile.class, FallingObject.class, Zombie.class, fallingZombie.class, Explosion.class, Plant.class);
     }
@@ -149,23 +149,23 @@ public class MyWorld extends World
             if (Greenfoot.isKeyDown("1")) {
                 CYS.stop();
                 Grasswalk.stop();
-                Greenfoot.setWorld(new Intro());
+                Greenfoot.setWorld(new Level0());
                     
                 
             } else if (Greenfoot.isKeyDown("2")) {
                 CYS.stop();
                 Grasswalk.stop();
-                Greenfoot.setWorld(new IntroLevel1());
+                Greenfoot.setWorld(new Level1());
                     
             } else if (Greenfoot.isKeyDown("3")) {
                 CYS.stop();
                 Grasswalk.stop();
-                Greenfoot.setWorld(new IntroLevel2());
+                Greenfoot.setWorld(new Level2());
                     
             } else if (Greenfoot.isKeyDown("4")) {
                 CYS.stop();
                 Grasswalk.stop();
-                Greenfoot.setWorld(new IntroLevel3());
+                Greenfoot.setWorld(new Level3());
             
             }
         }

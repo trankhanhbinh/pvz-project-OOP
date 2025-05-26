@@ -2,7 +2,6 @@
 comment0.target=LawnMower
 comment1.params=
 comment1.target=LawnMower()
-comment1.text=\r\n\ Constructor\ for\ LawnMower.\r\n\ Loads\ the\ animated\ lawnmower\ GIF.\r\n
 comment2.params=
 comment2.target=void\ act()
 comment3.params=

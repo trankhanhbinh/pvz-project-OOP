@@ -1,26 +1,5 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
-<<<<<<< HEAD
-/**
- * Write a description of class head here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
-public class Head extends FallingObject
-{
-    /**
-     * Act - do whatever the head wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
-     */
-    public Head() {
-        super(-3, 0.2, 0.7, RNG.Int(1, 5), 700L);
-        
-    }
-    
-}
-
-=======
 public class Head extends FallingObject{
 
     public Head() {
@@ -28,4 +7,4 @@ public class Head extends FallingObject{
     }
     
 }
->>>>>>> origin/main
+
