@@ -1,11 +1,3 @@
-<<<<<<< HEAD
-# pvz-project-OOP
-
-#Latest version (v.1):
-- Bugs:
-  + Progression Bar bugged.
-  + LawnMower doesn't spawn.
-=======
 Github Link: https://github.com/trankhanhbinh/pvz-project-OOP
 ![image](https://github.com/user-attachments/assets/f7cae485-b0c9-4a7c-b6cb-9b4104a12395)
 ![image](https://github.com/user-attachments/assets/e231da97-2f7a-49bf-9eaf-ddb5e0ebb3d6)
@@ -118,5 +110,5 @@ Their insights and support have significantly contributed to the success of our 
 *Thank you for exploring our project. As we continue to develop and refine Plants vs Zombies, feel free to explore the repository, review our documentation, and share your ideas to help make this game even better. Happy coding!*
 
 ---
->>>>>>> d9a70b9f13fa086a947c6a675d3a8b35c6fddb49
+
     
