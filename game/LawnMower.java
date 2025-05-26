@@ -1,49 +1,63 @@
-import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
-import java.util.List;
+import greenfoot.*;  
+import java.util.*;
 
 public class LawnMower extends Actor {
     private boolean activated;
-    private int speed = 8;  // Adjust speed as needed
-    private GreenfootImage idleImage;
-
+    private int speed = 8;  // Adjust speed as desired
+    private GreenfootImage lawnmowerImage;
+    
+    /**
+     * Constructor for LawnMower.
+     * Loads the animated lawnmower GIF.
+     */
     public LawnMower() {
         activated = false;
-        // Use the animated GIF asset for the lawnmower.
-        idleImage = new GreenfootImage("lawn_mover.gif");
-        setImage(idleImage);
+        lawnmowerImage = new GreenfootImage("lawn_mower.gif");
+        setImage(lawnmowerImage);
     }
-
+    
     public void act() {
+        if (getWorld() == null) // If you’ve been removed, exit immediately.
+            return;
+        
         if (!activated) {
-            List<Zombie> zombies = getWorld().getObjects(Zombie.class);
-            // Check if any zombie in the same row is close enough to trigger activation.
+            // Defensive copy prevents concurrent modification issues.
+            List<Zombie> zombies = new ArrayList<>(getWorld().getObjects(Zombie.class));
             for (Zombie z : zombies) {
-                if (Math.abs(z.getY() - getY()) < getImage().getHeight() / 2 && z.getX() < getX() + 100) {
+                // Check if the zombie is on the same row and close enough horizontally.
+                if (Math.abs(z.getY() - getY()) < getImage().getHeight() / 2 &&
+                    z.getX() < getX() + 100) {
                     activate();
                     break;
                 }
             }
-        }
-
-        if (activated) {
+        } else {
+            // Move the lawnmower to the right.
             setLocation(getX() + speed, getY());
-
-            // Remove all zombies the lawnmower touches.
-            Actor zombie = getOneIntersectingObject(Zombie.class);
-            while (zombie != null) {
-                getWorld().removeObject(zombie);
-                zombie = getOneIntersectingObject(Zombie.class);
+            
+            // Get a temporary list of all zombies currently intersecting.
+            List<Zombie> intersectingZombies = new ArrayList<>(getIntersectingObjects(Zombie.class));
+            for (Zombie z : intersectingZombies) {
+                try {
+                    // Only remove if the zombie still has a world (i.e. it's still active).
+                    if (z != null && z.getWorld() != null) {
+                        getWorld().removeObject(z);
+                    }
+                } catch (IllegalStateException ise) {
+                    // Another actor may have already removed z.
+                    // You can log this event or simply ignore it.
+                }
             }
-
-            // Remove itself if it has exited the stage.
-            if (getX() >= getWorld().getWidth()) {
+            
+            // Remove the lawnmower if it reaches the right edge.
+            if (getX() >= getWorld().getWidth() - 4) {
                 getWorld().removeObject(this);
             }
         }
     }
-
-
+    
     private void activate() {
         activated = true;
+        // Optionally change the image or play an activation sound here.
     }
 }

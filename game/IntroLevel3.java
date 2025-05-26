@@ -15,9 +15,9 @@ public class IntroLevel3 extends World
     public Zombie[][] level3 = {
                 {null, n, null, new BasicZombie()},
                 {n},
-                {new BasicZombie(), new Buckethead(), new Buckethead(), new Buckethead(), null}, 
+                {new BasicZombie(), new Buckethead(), new Buckethead(),n, null}, 
                 {new BasicZombie(),n,new Buckethead(),new Buckethead(),n,new BasicZombie()},
-                {n, new Conehead(), n, new Buckethead(),n,n,new BasicZombie(),n,n,n,new BasicZombie(),new BasicZombie()},
+                {n, n, n, new Buckethead(),n,n,new BasicZombie(),n,n,n,new BasicZombie(),new BasicZombie()},
                 {new BasicZombie(),n,n,n,new Conehead(), n,n,n,n,n,n,n,n,n,new BasicZombie()},
                 {n},
                 {new BasicZombie(), new Conehead(), new Brickhead(), new BasicZombie(), new Conehead(), new BasicZombie(), new BasicZombie(), new Buckethead()},
@@ -110,7 +110,7 @@ public class IntroLevel3 extends World
             
             
             
-            Greenfoot.setWorld(new MyWorld(CYS,level, seedbank, new IntroLevel3(), new WinCactus()));
+            Greenfoot.setWorld(new MyWorld(CYS,level, seedbank, new IntroLevel1(), new WinPotato()));
         }
        
     }
