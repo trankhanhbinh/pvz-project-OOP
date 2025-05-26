@@ -1,19 +1,7 @@
 # pvz-project-OOP
-Note:
-(1) Plants:
-  + peashooter
-  + repeater
-  + sunflower
-  + wallnut
-  + potato mine
-  + cactus
 
-(2) zombie : 
-  - add : zombie leader, brickhead.
-(3) extension :
-  + lawn mower
-(4) fix :
-  - zombies spawn too early
-  - progression bar
-  - map , menu
+#Latest version (v.1):
+- Bugs:
+  + Progression Bar bugged.
+  + LawnMower doesn't spawn.
     

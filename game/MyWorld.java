@@ -107,7 +107,7 @@ public class MyWorld extends World
         this.level = level;
         this.winPlant = winPlant;
         Greenfoot.setSpeed(50);
-        setBackground("lawn2.png");
+        setBackground("lawn (1).png");
         addObject(seedbank,0,0);
         addObject(grid,0,0);
         addObject(hitbox, 0,0);
@@ -133,7 +133,7 @@ public class MyWorld extends World
             addObject(new DelayAudio(scream, 70, false, 4000L), 0,0);
             loseOnce = true;
             Greenfoot.delay(250);
-            addObject(new Transition(false, new GameOver(restartWorld), "gameover.png", 5), 365, 215);
+            addObject(new Transition(false, new GameOver(restartWorld), "GameOver.png", 5), 365, 215);
         } else if (!winOnce && hasWon()) {
             winOnce = true;
             addObject(winPlant, RNG.Int(SeedBank.x1, SeedBank.x2), 215);
