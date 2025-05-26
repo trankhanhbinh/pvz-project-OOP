@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=PotatoMine
+comment1.params=
+comment1.target=PotatoMine()
+comment2.params=
+comment2.target=void\ update()
+comment3.params=dmg
+comment3.target=void\ hit(int)
+comment4.params=
+comment4.target=void\ checkExplosion()
+numComments=5

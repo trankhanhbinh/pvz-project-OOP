@@ -1,0 +1,23 @@
+#BlueJ class context
+comment0.target=Plant
+comment1.params=
+comment1.target=Plant()
+comment2.params=
+comment2.target=void\ act()
+comment2.text=\r\n\ Act\ -\ called\ each\ frame.\r\n\ Before\ updating\ itself,\ the\ plant\ cleans\ up\ its\ row\u2019s\ zombie\ list.\r\n
+comment3.params=
+comment3.target=void\ cleanZombieRow()
+comment3.text=\r\n\ Clean\ up\ zombie\ references\ this\ plant's\ row\ in\ MyWorld.level.zombieRow\r\n\ by\ removing\ any\ zombies\ that\ no\ longer\ exist\ in\ the\ world.\r\n\ This\ helps\ ensure\ that\ when\ subclasses\ (e.g.,\ Peashooter)\ iterate\ over\ their\ row,\r\n\ they\ only\ process\ zombies\ that\ are\ actually\ present.\r\n
+comment4.params=
+comment4.target=void\ update()
+comment5.params=
+comment5.target=int\ getXPos()
+comment6.params=
+comment6.target=int\ getYPos()
+comment7.params=world
+comment7.target=void\ addedToWorld(greenfoot.World)
+comment8.params=
+comment8.target=boolean\ isLiving()
+comment9.params=dmg
+comment9.target=void\ hit(int)
+numComments=10
