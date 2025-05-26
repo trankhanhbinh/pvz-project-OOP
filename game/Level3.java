@@ -1,7 +1,7 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 import java.util.*;
 
-public class IntroLevel3 extends World
+public class Level3 extends World
 {
     public GreenfootSound CYS = new GreenfootSound("chooseyourseeds.mp3");
     public int count = 0;
@@ -15,9 +15,9 @@ public class IntroLevel3 extends World
     public Zombie[][] level3 = {
                 {null, n, null, new BasicZombie()},
                 {n},
-                {new BasicZombie(), new Buckethead(), new Buckethead(), new Buckethead(), null}, 
+                {new BasicZombie(), new Buckethead(), new Buckethead(),n, null}, 
                 {new BasicZombie(),n,new Buckethead(),new Buckethead(),n,new BasicZombie()},
-                {n, new Conehead(), n, new Buckethead(),n,n,new BasicZombie(),n,n,n,new BasicZombie(),new BasicZombie()},
+                {n, n, n, new Buckethead(),n,n,new BasicZombie(),n,n,n,new BasicZombie(),new BasicZombie()},
                 {new BasicZombie(),n,n,n,new Conehead(), n,n,n,n,n,n,n,n,n,new BasicZombie()},
                 {n},
                 {new BasicZombie(), new Conehead(), new Brickhead(), new BasicZombie(), new Conehead(), new BasicZombie(), new BasicZombie(), new Buckethead()},
@@ -47,7 +47,7 @@ public class IntroLevel3 extends World
   
     
     public WaveManager level = new WaveManager(23500L, level3, 15000L, true, 7, 13, 19, 24, 27);
-    public IntroLevel3()
+    public Level3()
     {    
         
         super(733, 430, 1, false); 
@@ -110,7 +110,7 @@ public class IntroLevel3 extends World
             
             
             
-            Greenfoot.setWorld(new MyWorld(CYS,level, seedbank, new IntroLevel3(), new WinCactus()));
+            Greenfoot.setWorld(new MyWorld(CYS,level, seedbank, new Level3(), new WinPotato()));
         }
        
     }

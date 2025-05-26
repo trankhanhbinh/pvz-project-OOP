@@ -23,7 +23,7 @@ public class WinRepeater extends FallingObject
             } else {
                 if (!addTrans) {
                     addTrans=true;
-                    getWorld().addObject(new Transition(false, new IntroLevel2(), "whitetransition.png", 1), 360, 215);
+                    getWorld().addObject(new Transition(false, new Level2(), "whitetransition.png", 1), 360, 215);
                     Audio.play(70, "lightfill.mp3");
                 }
             }

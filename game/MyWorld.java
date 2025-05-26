@@ -14,9 +14,11 @@ public class MyWorld extends World
     public Zombie n = null;
     public World restartWorld;
     public FallingObject winPlant;
-    
-    
-
+    public LawnMower lawnmower1 = new LawnMower();
+    public LawnMower lawnmower2 = new LawnMower();
+    public LawnMower lawnmower3 = new LawnMower(); 
+    public LawnMower lawnmower4 = new LawnMower();
+    public LawnMower lawnmower5 = new LawnMower();
     
     public Zombie[][] level1 = {
                 {null, new BasicZombie(), null, null},
@@ -99,7 +101,6 @@ public class MyWorld extends World
 
     public MyWorld(GreenfootSound CYS, WaveManager level,  SeedBank seedbank, World restartWorld, FallingObject winPlant)
     {    
-        // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(763, 448, 1, false); 
         this.CYS = CYS;
         this.seedbank = seedbank;
@@ -112,7 +113,14 @@ public class MyWorld extends World
         addObject(grid,0,0);
         addObject(hitbox, 0,0);
         addObject(shovel, 690,420);
-        setPaintOrder(Transition.class,AHugeWave.class, ReadySetPlant.class, SunCounter.class, useShovel.class, Shovel.class, TransparentObject.class, SeedPacket.class, FallingSun.class, Sun.class, Dirt.class, Projectile.class, FallingObject.class, Zombie.class, fallingZombie.class, Explosion.class, Plant.class);
+        addObject(new ProgressionBar(level), 490, 25);
+        addObject (lawnmower1, 132, 357);
+        addObject (lawnmower2, 132, 284);
+        addObject (lawnmower3, 132, 211);
+        addObject (lawnmower4, 132, 138);
+        addObject (lawnmower5, 132, 65);
+        
+        setPaintOrder(ProgressionBar.class, Transition.class,AHugeWave.class, ReadySetPlant.class, SunCounter.class, useShovel.class, Shovel.class, TransparentObject.class, SeedPacket.class, FallingSun.class, Sun.class, Dirt.class, Projectile.class, FallingObject.class, Zombie.class, fallingZombie.class, Explosion.class, Plant.class);
     }
     
     public void act() {
@@ -141,19 +149,24 @@ public class MyWorld extends World
             if (Greenfoot.isKeyDown("1")) {
                 CYS.stop();
                 Grasswalk.stop();
-                Greenfoot.setWorld(new Intro());
+                Greenfoot.setWorld(new Level0());
                     
                 
             } else if (Greenfoot.isKeyDown("2")) {
                 CYS.stop();
                 Grasswalk.stop();
-                Greenfoot.setWorld(new IntroLevel1());
+                Greenfoot.setWorld(new Level1());
                     
             } else if (Greenfoot.isKeyDown("3")) {
                 CYS.stop();
                 Grasswalk.stop();
-                Greenfoot.setWorld(new IntroLevel2());
+                Greenfoot.setWorld(new Level2());
                     
+            } else if (Greenfoot.isKeyDown("4")) {
+                CYS.stop();
+                Grasswalk.stop();
+                Greenfoot.setWorld(new Level3());
+            
             }
         }
         

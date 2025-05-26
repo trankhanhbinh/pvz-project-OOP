@@ -1,7 +1,8 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 import java.util.*;
 
-public class IntroLevel1 extends World
+
+public class Level0 extends World
 {
     public GreenfootSound CYS = new GreenfootSound("chooseyourseeds.mp3");
     public int count = 0;
@@ -9,34 +10,24 @@ public class IntroLevel1 extends World
     public int location = 0;
     public boolean started = false;
     public Zombie n = null;
-    public SeedPacket[] bank = {new SunflowerPacket(), new PeashooterPacket(), new WalnutPacket(), new PotatoPacket()};
+    public SeedPacket[] bank = {new SunflowerPacket(), new PeashooterPacket(), new WalnutPacket()};
     
     public SeedBank seedbank = new SeedBank(bank);   
     
     public Zombie[][] level1 = {
-                {null, new BasicZombie(), null, null},
+                {new BasicZombie(), n , null, null},
                 {n},
-                {new BasicZombie(), null, null, null, null}, 
+                {n, null, null, null, new BasicZombie()}, 
                 {n},
                 {null, new BasicZombie(), null, new BasicZombie()},
-                {new BasicZombie()},
-                {null, null, new Conehead(), null, null},
+                {new BasicZombie(),n,n,n,n,n,new BasicZombie()},
+                {null, null, new BasicZombie(), new BasicZombie(), new BasicZombie()},
                 {n},
-                {new BasicZombie(), new Conehead(), new BasicZombie(), new BasicZombie(), new BasicZombie(), n,new BasicZombie()}, 
-                {n},
-                {new Conehead(), n, null, new BasicZombie(), null, null, new BasicZombie()},
-                {new BasicZombie(),n,n, new BasicZombie(), null, new BasicZombie(), new BasicZombie()},
-                {null, null, null, new Buckethead(), null},
-                {n,new BasicZombie(),n,n,new Conehead(), n, n, new BasicZombie()},
-                {null, new BasicZombie(), null, null, new Conehead(),n,n,new BasicZombie()},
-                {new BasicZombie(), new BasicZombie(), new BasicZombie(),  null, new Conehead()}, 
-                {null, null, new BasicZombie(), null, null},
-                {n},
-                {new Conehead(), new Conehead(), new Conehead(), new BasicZombie(), new BasicZombie(), new Buckethead(), null, new BasicZombie(), new Conehead(), new Buckethead()}
+                {new BasicZombie(), new Conehead(), new BasicZombie(), new BasicZombie(), new BasicZombie(), n,new BasicZombie()}
     };
     
-    public WaveManager level = new WaveManager(23500L, level1, 15000L, true, 8, 18);
-    public IntroLevel1()
+    public WaveManager level = new WaveManager(23500L, level1, 15000L, true, 8);
+    public Level0()
     {    
         
         super(733, 430, 1, false); 
@@ -45,9 +36,9 @@ public class IntroLevel1 extends World
         addObject(new Basic(), 890, 370);
         addObject(new Basic(), 822, 241);
         addObject(new IdleCone(), 890, 210);
-        addObject(new IdleCone(), 850, 70);
-        addObject(new IdleBucket(), 824, 317);
+    
         CYS.setVolume(70);
+    
         
     }
     public void act() {
@@ -87,7 +78,7 @@ public class IntroLevel1 extends World
         else if ( count == 500 )
         {
            
-            Greenfoot.setWorld(new MyWorld(CYS, level, seedbank, new IntroLevel1(), new WinRepeater()));
+            Greenfoot.setWorld(new MyWorld(CYS, level, seedbank, new Level0(), new WinPotato()));
         }
        
     }

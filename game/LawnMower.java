@@ -1,48 +1,50 @@
-import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
-import java.util.List;
+import greenfoot.*;  
+import java.util.*;
 
 public class LawnMower extends Actor {
     private boolean activated;
-    private int speed = 8;  // Adjust speed as needed
-    private GreenfootImage idleImage;
-
+    private int speed = 7;
+    private GreenfootImage lawnmowerImage;
+    
     public LawnMower() {
         activated = false;
-        // Use the animated GIF asset for the lawnmower.
-        idleImage = new GreenfootImage("lawn_mover.gif");
-        setImage(idleImage);
+        lawnmowerImage = new GreenfootImage("lawn_mower.gif");
+        setImage(lawnmowerImage);
     }
-
+    
     public void act() {
+        if (getWorld() == null) {
+            return;
+        }
+        
         if (!activated) {
-            List<Zombie> zombies = getWorld().getObjects(Zombie.class);
-            // Check if any zombie in the same row is close enough to trigger activation.
+            List<Zombie> zombies = new ArrayList<>(getWorld().getObjects(Zombie.class));
             for (Zombie z : zombies) {
-                if (Math.abs(z.getY() - getY()) < getImage().getHeight() / 2 && z.getX() < getX() + 100) {
+                if (Math.abs(z.getY() - getY()) < getImage().getHeight() / 4 && z.getX() < getX() + 100) {
                     activate();
                     break;
                 }
             }
-        }
-
-        if (activated) {
+        } else {
             setLocation(getX() + speed, getY());
-
-            // Remove all zombies the lawnmower touches.
-            Actor zombie = getOneIntersectingObject(Zombie.class);
-            while (zombie != null) {
-                getWorld().removeObject(zombie);
-                zombie = getOneIntersectingObject(Zombie.class);
+            
+            int removalTolerance = 20;
+            List<Zombie> intersectingZombies = new ArrayList<>(getIntersectingObjects(Zombie.class));
+            for (Zombie z : intersectingZombies) {
+                try {
+                    if (z != null && z.getWorld() != null && Math.abs(z.getY() - getY()) <= removalTolerance) {
+                        getWorld().removeObject(z);
+                    }
+                } catch (IllegalStateException ise) {
+                }
             }
-
-            // Remove itself if it has exited the stage.
-            if (getX() >= getWorld().getWidth()) {
+            
+            if (getX() >= getWorld().getWidth() - 4) {
                 getWorld().removeObject(this);
             }
         }
     }
-
-
+    
     private void activate() {
         activated = true;
     }

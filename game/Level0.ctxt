@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=Level0
+comment1.params=
+comment1.target=Level0()
+comment2.params=
+comment2.target=void\ act()
+comment3.params=
+comment3.target=void\ bgScrollAnimate()
+comment4.params=offset
+comment4.target=void\ scrollBGimage(int)
+numComments=5

@@ -7,7 +7,7 @@ import java.util.*;
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class IntroLevel2 extends World
+public class Level2 extends World
 {
     public GreenfootSound CYS = new GreenfootSound("chooseyourseeds.mp3");
     public int count = 0;
@@ -42,7 +42,7 @@ public class IntroLevel2 extends World
   
     
     public WaveManager level = new WaveManager(23500L, level2, 15000L, true, 8, 18);
-    public IntroLevel2()
+    public Level2()
     {    
         
         super(733, 430, 1, false); 
@@ -102,7 +102,7 @@ public class IntroLevel2 extends World
             
             
             
-            Greenfoot.setWorld(new MyWorld(CYS,level, seedbank, new IntroLevel2(), new WinCactus()));
+            Greenfoot.setWorld(new MyWorld(CYS,level, seedbank, new Level2(), new WinCactus()));
         }
        
     }

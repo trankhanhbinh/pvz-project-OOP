@@ -6,34 +6,33 @@ public class MainMenu extends World
     GreenfootSound menutheme = new GreenfootSound("menutheme.mp3");
     public MainMenu(GreenfootSound menutheme)
     {    
-        // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(576, 430, 1, false); 
         addObject(hitbox,0,0);
-        addObject(new Start(), 412, 132);
-        addObject(new More(), 398, 224);
+        addObject(new Start(), 428, 138);
+        addObject(new More(), 414, 233);
         this.menutheme = menutheme;
         Greenfoot.setSpeed(50);
     }
     public void act() {
         if (Greenfoot.isKeyDown("1")) {
             menutheme.stop();
-            Greenfoot.setWorld(new Intro());
+            Greenfoot.setWorld(new Level0());
                     
                 
         } else if (Greenfoot.isKeyDown("2")) {
            menutheme.stop();
                 
-            Greenfoot.setWorld(new IntroLevel1());
+            Greenfoot.setWorld(new Level1());
                     
         } else if (Greenfoot.isKeyDown("3")) {
             menutheme.stop();
                 
-            Greenfoot.setWorld(new IntroLevel2());
+            Greenfoot.setWorld(new Level2());
                     
         } else if (Greenfoot.isKeyDown("4")) {
             menutheme.stop();
                 
-            Greenfoot.setWorld(new IntroLevel3());
+            Greenfoot.setWorld(new Level3());
                     
         }
     }
