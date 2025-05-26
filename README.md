@@ -76,7 +76,7 @@ We have invested significant effort into our design and documentation phases:
   - [Lucidchart UML](https://lucid.app/lucidchart/56a57a19-35bf-44cc-b69f-d08fca885885/edit?viewport_loc=-4305%2C-1748%2C4445%2C1909%2CHWEp-vi-RSFO&invitationId=inv_cd6f4b55-87e1-4e41-88ae-275bc3b4083b)
 
 - **Design Documents:**  
-  Our design concepts, ideas, and initial mockups are available through the Powerpoint file. (Will upload soon)
+  Our design concepts, ideas, and initial mockups are available through the pdf file above.
 
 ---
 
