@@ -59,8 +59,8 @@ Our project builds upon established projects and designs for a solid foundation.
 
 Our team consists of **five dedicated members** who collaborate to bring this project to life:
 
-- **Hưng:** Responsible for UML documentation, writing the README content, integration oversight, and testing.
-- **Khoa:** Project coordinator, integration oversight, testing, specializes in UML contributions and the creation of the World class and other helper classes.
+- **Hưng:** Responsible for UML documentation and the creation of the World class, writing the README content, integration oversight, and testing.
+- **Khoa:** Project coordinator, integration oversight, testing, specializes in UML contributions and Actor's subclasses.
 - **Bình:** Develops the core game entities such as the first 3 plants (Sunflower, Peashooter, and Walnut), and helps make Powerpoint file to demonstrate the project's design concepts and ideas.
 - **Nam:** Develops the core game entities such as Zombie, IdleZombie, and other classes related to Zombie.
 - **Ninh:** Works on the last 2 plants (PotatoMine and Cactus).
