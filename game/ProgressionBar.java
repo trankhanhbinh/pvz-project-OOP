@@ -9,7 +9,7 @@ public class ProgressionBar extends Actor
 
     public ProgressionBar(WaveManager level) {
         this.level = level;
-        bar = new GreenfootImage(barWidth, barHeight);
+        bar = new GreenfootImage("progress.png");
         setImage(bar);
     }
 

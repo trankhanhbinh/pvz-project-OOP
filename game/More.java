@@ -1,8 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+import java.awt.Desktop;
+import java.net.URL;
 
 public class More extends Buttons
 {
-     public boolean clicked = false;
+    public boolean clicked = false;
     GreenfootImage[] start;
     public int counter = 0;
     public More() {
@@ -24,6 +26,11 @@ public class More extends Buttons
             if (Greenfoot.mouseClicked(this)) {
                 clicked = true;
                 
+                try{
+                    Desktop.getDesktop().browse(new URL("https://github.com/trankhanhbinh/pvz-project-OOP").toURI());
+                }
+            catch (Exception e)
+                {}
                 Audio.play(100, "gravebutton.mp3");
                 
             }
