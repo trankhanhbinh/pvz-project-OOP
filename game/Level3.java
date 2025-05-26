@@ -110,7 +110,7 @@ public class Level3 extends World
             
             
             
-            Greenfoot.setWorld(new MyWorld(CYS,level, seedbank, new Level3(), null));
+            Greenfoot.setWorld(new MyWorld(CYS,level, seedbank, new Level3(), new WinPotato()));
         }
        
     }
