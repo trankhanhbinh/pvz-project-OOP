@@ -67,9 +67,7 @@ public class Projectile extends animatedObjects{
                 }
                 
                 
-            }
-            
-           
+            }           
         }
     }
 }
